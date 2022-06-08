@@ -1,0 +1,129 @@
+@import './mixin';
+$font-primary: 'Roboto',
+sans-serif;
+$primary-1:#284D9C;
+$primary-2:#01024B;
+$primary-3:#C4D8F06B;
+$primary-4:#CAF0F8;
+$primary-5:#03045E;
+$primary-6:#1E3C72;
+$primary-7:#77838F;
+$primary-8:#E7E7EC;
+$head:#2F2D51;
+$color1:#104D8D;
+$color2:#385682;
+$white: #fff;
+$gray: #B5B5B7;
+$gray2: #959595;
+::selection {
+    background-color: $primary-4;
+    color: $primary-2;
+}
+
+.scroll-fill {
+    fill: $primary-1!important;
+}
+
+.no-upper {
+    text-transform: none!important;
+}
+
+.mt-4r {
+    margin-top: 4rem;
+}
+
+.mb-4r {
+    margin-bottom: 4rem;
+}
+
+.pl-1-5 {
+    padding-left: 1.5rem;
+}
+
+.pb-1-5 {
+    padding-bottom: 1.5rem;
+}
+
+.pr-1-5 {
+    padding-right: 1.5rem;
+}
+
+.mt-10r {
+    margin-top: 10rem;
+}
+
+.mt-8r {
+    margin-top: 8rem;
+}
+
+.mt-2r {
+    margin-top: 2rem;
+}
+
+.mt-5r {
+    margin-top: 5rem;
+}
+
+.pb-2r {
+    padding-bottom: 2rem;
+}
+
+.pt-2r {
+    padding-top: 2rem;
+}
+
+.pt-2r {
+    padding-top: 2rem;
+}
+
+.pt-4r {
+    padding-top: 4rem;
+}
+
+.pb-4r {
+    padding-bottom: 4rem;
+}
+
+.pl-5r {
+    padding-left: 5rem;
+}
+
+.px-1-5 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.py-1 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.py-2r {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.py-7r {
+    padding: 7rem 0;
+}
+
+.br-10 {
+    border-radius: 1rem
+}
+
+.br-20 {
+    border-radius: 2rem
+}
+
+.header-text {
+    @include text700-22-26;
+    text-transform: uppercase;
+}
+
+.header-sub {
+    text-transform: uppercase;
+}
+
+.gap-3 {
+    gap: 3rem 0!important;
+}

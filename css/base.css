@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&family=Poppins:wght@200;400&family=Roboto&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    word-break: break-word;
+}
+
+a,
+a:hover {
+    text-decoration: none
+}
+
+img,
+object {
+    max-width: 100%;
+    display: block;
+}
+
+.col-lg-2-5 {
+    max-width: 20%;
+    flex: 0 0 20%;
+    position: relative;
+    width: 100%;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.owl-carousel .owl-item img {
+    width: 100%;
+    max-width: 100%;
+}
+
+ul {
+    margin: 0;
+    list-style-type: none;
+}
+
+svg {
+    cursor: pointer;
+}
+
+.owl-stage-outer {
+    padding-bottom: 1rem;
+}
+
+.owl-carousel.owl-drag .owl-item {
+    display: flex;
+    flex: 1;
+}
+
+.owl-carousel .owl-stage {
+    display: flex;
+}
+
+.banner-slider .owl-item.active .banner-img {
+    animation: fadeIn ease 1s;
+    -webkit-animation: fadeIn ease 1s;
+}
+
+.banner-slider .owl-item.active .text-header {
+    animation: fadeInDown ease 2s;
+    -webkit-animation: fadeInDown ease 2s;
+}
+
+.banner-slider .owl-item.active .text-title {
+    animation: fadeInRight ease 1s;
+    -webkit-animation: fadeInRight ease 1s;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    background: #284D9C;
+    opacity: 0.6;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background-color: #284D9C;
+    opacity: 1;
+}
+
+.owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 3rem;
+}
+
+.profile-control .main-content-menu .header-menu .menu-bar {
+    display: none;
+}
+
+.note-btn-group .btn {
+    font-size: 1.8rem!important;
+}
+
+.panel-heading {
+    border-bottom: 0.1rem solid #B5B5B7;
+}
+
+.note-editing-area {
+    height: 20rem;
+}
+
+.modal-dialog {
+    top: 50%;
+    transform: translateY(-50%)!important;
+    -webkit-transform: translateY(-50%)!important;
+}
+
+.note-editor.note-frame .note-editing-area .note-editable {
+    height: 100%!important;
+}
+
+@media (min-width:1204px) {
+    .overlay {
+        display: none!important;
+    }
+}
+
+@media (max-width:1204px) {
+    .about .container .featured {
+        display: none;
+    }
+    .about-details {
+        padding: 12rem 0!important;
+    }
+    .profile-control .sidebar-control {
+        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        z-index: 9999999;
+        width: 40%;
+        transition: all .3s ease;
+        -webkit-transition: all .3s ease;
+    }
+    .profile-control .main-content {
+        margin-left: 0;
+    }
+    .profile-control .main-content-menu .header-menu .menu-bar {
+        display: block;
+    }
+}
+
+@media (min-width:1200px) {
+    .container {
+        max-width: 120rem;
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
+@media (min-width:991px) {
+    .header-top .container .menu-mobile {
+        display: none!important;
+    }
+}
+
+@media (max-width:991px) {
+    .nav-menu {
+        display: none;
+    }
+    .header-banner .text {
+        max-width: 36rem!important;
+        text-align: unset!important;
+    }
+    .sidebar {
+        padding-right: 1.5rem!important;
+        order: 2;
+    }
+    .popular-professor .container .row .row-img .main-img {
+        width: 50%;
+        margin: 0 auto!important;
+    }
+    .popular-professor .container .row .row-img .img-p-ab {
+        transform: translateX(80%);
+        -webkit-transform: translateX(80%);
+    }
+    .profile-control .main-content-section .your-courses .row .img-col .courses-thumb-img {
+        position: unset;
+        width: 100%;
+    }
+    .suggest-courses .suggest-courses-header .suggest-courses-action .suggest-courses-action-search {
+        margin-top: 3rem;
+    }
+    .header-courses-banner .container .row .col-content-right .banner-img .logo-link {
+        display: unset;
+        position: unset;
+    }
+    .header-courses-banner .container .row .col-content-right .banner-img .logo-link img {
+        margin-top: 5rem!important;
+    }
+    .login .row .col-right .login-main .login-logo {
+        padding: 0 1.5rem;
+    }
+}
+
+@media (max-width:768px) {
+    .about-details {
+        padding: 5rem!important;
+    }
+    .subscribe-courses .row .subscribe-form input[type="email"] {
+        width: 100%;
+    }
+    .subscribe-courses .row .subscribe-form .btn-submit {
+        width: 100%;
+        margin-left: 0!important;
+    }
+    .subscribe-courses .col-left .subscribe-text {
+        padding-left: 1.5rem;
+    }
+    .col-img {
+        margin: 0 auto;
+    }
+    .footer .col-right .menu-item {
+        width: 100%;
+        margin-bottom: 4rem;
+    }
+    .header-banner .text {
+        max-width: 28rem!important;
+    }
+    .header-banner .text-header {
+        font-size: 2.8rem!important;
+    }
+    .header-banner .text-title {
+        margin-top: 2.8rem!important;
+    }
+    .col-sm-logo {
+        max-width: 11%;
+    }
+    .header-professor-banner .banner-overlay {
+        background: linear-gradient(90deg, #0C299A -2.27%, rgba(42, 82, 152, 0.14) 100%);
+    }
+    .header-professor-banner .banner-text {
+        max-width: 100%;
+    }
+    .popular-professor .container .row .row-img .main-img,
+    .popular-professor .container .row .row-img .img-p-ab {
+        width: 50%;
+        margin: 0 auto!important;
+    }
+    .popular-professor .container .row .row-img .img-p-ab {
+        padding-top: 3rem;
+        position: unset;
+        transform: unset;
+        -webkit-transform: unset;
+    }
+    .professor-list .container .professor-slide .owl-professor-carousel .professor-element .professor-img .overlay-professor-social .social-link {
+        width: 3.6rem!important;
+        height: 3.6rem!important;
+    }
+    .professor-list .container .professor-slide .owl-professor-carousel .professor-element .professor-img .overlay-professor-social {
+        gap: 0 4rem;
+    }
+    .profile-control .main-content-menu .header-menu .menu-action-account {
+        display: none!important;
+    }
+    .profile-control .main-content .main-content-menu .header-menu .menu-bar {
+        padding: 1rem 0;
+    }
+    .profile-control .main-content-section .main-panel .row {
+        text-align: center;
+    }
+    .profile-control .main-content-section .account-setting .row .form-setting {
+        padding: 4rem;
+    }
+    .filter-by-cover {
+        margin-top: 3rem!important;
+    }
+    .profile-control .sidebar-control {
+        width: 50%;
+    }
+    .my-info .row .col-avt .row {
+        justify-content: center!important;
+    }
+    .tab-menu-courses-list .tab-menu-courses-item a {
+        padding: 2rem 0;
+    }
+}
+
+@media (max-width:576px) {
+    .profile-control .sidebar-control {
+        width: 70%;
+    }
+    .header-banner .text-title {
+        display: none;
+    }
+    .organization .organization-img {
+        width: 80%!important;
+        max-width: 80%!important;
+        margin: 0 auto;
+    }
+    .subscribe-courses img {
+        width: 50%!important;
+        max-width: 50%!important;
+    }
+    .header-top .container .menu-bar .menu-bar-icon {
+        width: 2.4rem;
+        height: 2rem;
+    }
+    .courses-found {
+        padding: 5rem 0;
+    }
+    .container {
+        padding-left: 4rem!important;
+        padding-right: 4rem!important;
+    }
+}
+
+@media (max-width: 480px) {
+    .courses-details-heading::before {
+        width: 100%;
+    }
+    .profile-control .sidebar-control {
+        width: 80%;
+    }
+    .about-details,
+    .skills {
+        padding: 5rem 0!important;
+    }
+    .about-details .about-details-item:first-child {
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 2rem;
+    }
+    .container {
+        padding-left: 2rem!important;
+        padding-right: 2rem!important;
+    }
+    .header-professor-banner {
+        background-position-x: 80%;
+    }
+    .popular-professor .container .row .row-img .main-img,
+    .popular-professor .container .row .row-img .img-p-ab {
+        width: 80%;
+    }
+    .profile-control .main-content-section .main-panel .row .panel-gesture-heading .name {
+        padding-left: 0!important;
+        display: block;
+        margin-top: 1rem;
+    }
+    .header-courses-banner {
+        position: relative;
+        padding: 13rem 0;
+        background: linear-gradient(90deg, #03045E 0%, #284D9C 50.52%, #ADD2DE 150.92%);
+    }
+    .header-courses-banner .container .row .col-content-left .banner-text-join {
+        text-align: center;
+    }
+}

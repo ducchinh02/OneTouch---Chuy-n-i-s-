@@ -1,0 +1,95 @@
+@mixin text400-12-19 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    // line-height: 1.9rem;
+}
+
+@mixin text400-14-19 {
+    font-weight: 400;
+    font-size: 1.4rem;
+    // line-height: 1.9rem;
+}
+
+@mixin text600-14-19 {
+    font-weight: 600;
+    font-size: 1.4rem;
+    // line-height: 1.9rem;
+}
+
+@mixin text400-16-19 {
+    font-weight: 400;
+    font-size: 1.6rem;
+    // line-height: 1.9rem;
+}
+
+@mixin text600-16-24 {
+    font-weight: 600;
+    font-size: 1.6rem;
+    // line-height: 2.4rem;
+}
+
+@mixin text600-16-19 {
+    font-weight: 600;
+    font-size: 1.6rem;
+    // line-height: 1.9rem;
+}
+
+@mixin text600-18-22 {
+    font-weight: 600;
+    font-size: 1.8rem;
+    // line-height: 2.2rem;
+}
+
+@mixin text700-20-24 {
+    font-weight: 700;
+    font-size: 2rem;
+    // line-height: 2.4rem;
+}
+
+@mixin text700-22-26 {
+    font-weight: 700;
+    font-size: 2.2rem;
+    // line-height: 2.6rem;
+}
+
+@mixin text600-24-28 {
+    font-weight: 600;
+    font-size: 2.4rem;
+    // line-height: 2.8rem;
+}
+
+@mixin text700-24-28 {
+    font-weight: 600;
+    font-size: 2.4rem;
+    // line-height: 2.8rem;
+}
+
+@mixin text700-30-42 {
+    font-weight: 700;
+    font-size: 3rem;
+    // line-height: 4.8rem;
+}
+
+@mixin text700-36-48 {
+    font-weight: 700;
+    font-size: 3.6rem;
+    // line-height: 4.8rem;
+}
+
+@mixin text700-40-47 {
+    font-weight: 700;
+    font-size: 4rem;
+    // line-height: 4.7rem;
+}
+
+@mixin text700-48-56 {
+    font-weight: 700;
+    font-size: 4.8rem;
+    // line-height: 5.6rem;
+}
+
+@mixin text900-80-94 {
+    font-weight: 900;
+    font-size: 8rem;
+    // line-height: 9.4rem;
+}

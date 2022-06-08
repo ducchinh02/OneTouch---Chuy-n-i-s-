@@ -1,0 +1,1174 @@
+@import './_variables';
+@import './_mixin';
+@import './_header';
+@import './footer';
+@import './global';
+// home page
+// about - home page
+.about {
+    .container {
+        position: relative;
+        .featured {
+            position: absolute;
+            top: 0;
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            background-color: $white;
+            width: calc(100% - 3rem);
+            box-shadow: 0.2rem 0.3rem 1.1rem rgba(0, 0, 0, 0.5);
+            border-radius: 1.9rem;
+            z-index: 3;
+            &-item {
+                padding: 3.5rem;
+            }
+            &-icon {
+                img {
+                    margin: 0 auto;
+                    height: 12.4rem;
+                }
+            }
+            &-details {
+                margin-top: 5rem;
+                flex: 1;
+                .featured-header {
+                    @include text600-24-28;
+                    color: $primary-2;
+                    margin-bottom: 4rem;
+                }
+                .featured-title {
+                    .featured-link {
+                        @include text600-16-24;
+                        color: $primary-2;
+                        transition: all .3s ease;
+                        -webkit-transition: all .3s ease;
+                        &:hover {
+                            color: $primary-1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-details {
+        padding-top: 25rem;
+        padding-bottom: 12rem;
+        &-item {
+            .about-tag {
+                @include text400-16-19;
+                width: max-content;
+                padding: 1.4rem 1.8rem;
+                border-radius: 4rem;
+                background-color: $primary-3;
+                color: $primary-6;
+            }
+            .about-header {
+                margin: 4rem 0;
+                @include text700-24-28;
+                color: $primary-1;
+            }
+            .about-title {
+                margin-bottom: 6rem;
+                @include text400-16-19;
+                color: $primary-1;
+            }
+            .btn-more {
+                @include text600-18-22;
+                padding: 1rem 1.6rem;
+                background-color: $primary-1;
+                color: $white;
+                transition: all .3s ease;
+                -webkit-transition: all .3s ease;
+                float: right;
+                position: relative;
+                overflow: hidden;
+                z-index: 1;
+                &::before {
+                    position: absolute;
+                    content: "";
+                    left: 0;
+                    top: 0;
+                    width: 0;
+                    height: 100%;
+                    transition: all .4s ease;
+                    -webkit-transition: all .4s ease;
+                    background-color: $primary-2;
+                    z-index: -1;
+                }
+                &:hover::before {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+// skills
+.skills {
+    padding: 18rem 0;
+    background: url(../img/background2.png) top center / cover no-repeat;
+    color: $white;
+    .row {
+        .flip-card {
+            position: relative;
+            transition: all .5s ease;
+            -webkit-transition: all .5s ease;
+            display: block;
+            cursor: pointer;
+            img,
+            .back-card {
+                transition-timing-function: linear;
+                transition-duration: 1s;
+                transition-property: transform, opacity;
+            }
+            &:hover {
+                img {
+                    opacity: 0;
+                    pointer-events: none;
+                }
+            }
+            .back-card {
+                position: absolute;
+                top: 0;
+                width: calc(100% - 3rem);
+                height: 100%;
+                opacity: 0;
+                backface-visibility: hidden;
+                border-radius: inherit;
+                -webkit-transform: rotateY(-180deg);
+                transform: rotateY(-180deg);
+                background-color: #fff;
+                border-radius: 3rem;
+                p {
+                    text-align: justify;
+                    padding: 0 2rem;
+                    color: #333;
+                }
+                a {
+                    color: #333;
+                    padding: 1.2rem 1.4rem;
+                    border: 0.1rem solid $primary-7;
+                    border-radius: 0.4rem;
+                    width: max-content;
+                }
+            }
+            &:hover {
+                img {
+                    opacity: 0;
+                    pointer-events: none;
+                    -webkit-transform: rotateY(-180deg);
+                    transform: rotateY(180deg);
+                }
+                .back-card {
+                    transform: rotateY(0);
+                    -webkit-transform: rotateY(0);
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+// courses
+.courses {
+    padding: 11.4rem 0;
+    background: url(../img/Vector.png) top / cover no-repeat;
+    &-header-heading {
+        color: $primary-5;
+    }
+    .show-more {
+        .btn-more {
+            padding: 1rem 1.6rem;
+            @include text600-18-22;
+            color: $primary-5;
+            border: 0.1rem solid $primary-5;
+            border-radius: 2rem;
+            transition: all .3s ease;
+            -webkit-transition: all .3s ease;
+            &:hover {
+                background-color: $primary-5;
+                border: none;
+                color: $white;
+            }
+        }
+    }
+}
+
+// subscribe courses
+.subscribe-courses {
+    padding: 13rem 0;
+    background: url(../img/form.png) top center/ cover no-repeat;
+    .row {
+        gap: 5rem 0;
+        .col-left {
+            color: $white;
+            .header-title {
+                @include text600-16-24;
+                text-transform: uppercase;
+            }
+        }
+        .subscribe-form {
+            input[type="email"] {
+                border: none;
+                outline: none;
+                flex: 1;
+                padding: 2.5rem 1.5rem;
+                color: $primary-1;
+                @include text600-16-24;
+                &::placeholder {
+                    color: $primary-5;
+                    @include text600-16-24;
+                }
+                &:-ms-input-placeholder {
+                    color: $primary-5;
+                    @include text600-16-24;
+                }
+                &::-ms-input-placeholder {
+                    color: $primary-5;
+                    @include text600-16-24;
+                }
+            }
+            .btn-submit {
+                border: none;
+                outline: none;
+                padding: 2.5rem;
+                background-color: $primary-1;
+                color: $white;
+                margin-left: 1.6rem;
+            }
+        }
+    }
+}
+
+// organization
+.organization {
+    padding: 8rem 0;
+}
+
+// courses page
+// courses found
+.courses-found {
+    padding: 8rem 0;
+    .container {
+        .courses-filter {
+            padding-bottom: 8rem;
+            .total-courses {
+                color: $primary-7;
+                @include text600-16-19;
+                .total {
+                    color: $primary-1;
+                }
+            }
+            .filter-by-cover {
+                border-radius: 0.4rem;
+                border: 0.1rem solid $primary-8;
+                transition: all .3s ease;
+                -webkit-transition: all .3s ease;
+                padding: 1.6rem 1.6rem;
+                box-shadow: 0 0.8rem 1.5rem rgba(140, 152, 164, 0.1);
+                cursor: pointer;
+                position: relative;
+                .filter-select-btn {
+                    .filter-wrapper {
+                        @include text600-14-19;
+                        cursor: pointer;
+                        padding-right: 2rem;
+                        color: $head;
+                    }
+                }
+                .icon {
+                    width: 1.2rem;
+                    transform: rotate(180deg);
+                    -webkit-transform: rotate(180deg);
+                    svg {
+                        fill: $head;
+                    }
+                }
+                &:hover {
+                    box-shadow: 0 0.8rem 1.5rem rgba(140, 152, 164, 0.3);
+                }
+                .filter-dropdown {
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    width: 100%;
+                    opacity: 0;
+                    pointer-events: none;
+                    visibility: hidden;
+                    border-radius: 0.4rem;
+                    box-shadow: 0 0.8rem 1.5rem rgba(140, 152, 164, 0.1);
+                    border: 0.1rem solid $primary-8;
+                    transition: all .3s ease;
+                    -webkit-transition: all .3s ease;
+                    z-index: 3;
+                    background-color: $white;
+                    overflow: hidden;
+                    margin-top: 2rem;
+                    .filter-item {
+                        @include text600-14-19;
+                        padding: 1.6rem 1.6rem;
+                        border-radius: 0.4rem;
+                        transition: all .3s ease;
+                        -webkit-transition: all .3s ease;
+                        &:hover {
+                            box-shadow: 1.5rem 0.8rem 1.5rem rgba(140, 152, 164, 0.3);
+                        }
+                        &.selected {
+                            background-color: $primary-1;
+                            color: $white;
+                        }
+                    }
+                    &.active {
+                        opacity: 1;
+                        pointer-events: all;
+                        visibility: visible;
+                    }
+                }
+            }
+        }
+        .row {
+            gap: 5rem 0;
+            .sidebar {
+                padding-right: 5rem;
+                .form-filter-courses {
+                    .row {
+                        .filter-box {
+                            padding: 3rem;
+                            border: 0.1rem solid $primary-1;
+                            .filter-box-header {
+                                &-heading {
+                                    @include text600-16-19;
+                                    color: $primary-2;
+                                }
+                                .toggle-content {
+                                    position: relative;
+                                    width: 1.5rem;
+                                    cursor: pointer;
+                                    &::before {
+                                        content: "";
+                                        position: absolute;
+                                        width: 100%;
+                                        height: 0.2rem;
+                                        background-color: $primary-2;
+                                        top: 50%;
+                                        left: 50%;
+                                        transform: translate(-50%, -50%);
+                                        -webkit-transform: translate(-50%, -50%);
+                                    }
+                                    span {
+                                        height: 1.5rem;
+                                        width: 0.2rem;
+                                        background-color: $primary-2;
+                                        display: block;
+                                        transition: all .3s ease;
+                                        -webkit-transition: all .3s ease;
+                                        transform: rotate(90deg);
+                                        -webkit-transform: rotate(90deg);
+                                    }
+                                    &.collapsed {
+                                        span {
+                                            transform: rotate(0deg);
+                                            -webkit-transform: rotate(0deg);
+                                        }
+                                    }
+                                }
+                            }
+                            .form-checkbox {
+                                .label-check {
+                                    padding-left: 3rem;
+                                    position: relative;
+                                    @include text600-14-19;
+                                    color: $primary-1;
+                                    & input {
+                                        position: absolute;
+                                        opacity: 0;
+                                        cursor: pointer;
+                                        height: 0;
+                                        width: 0;
+                                    }
+                                    /* Create a custom checkbox */
+                                    .checkmark {
+                                        position: absolute;
+                                        top: 50%;
+                                        left: 0;
+                                        -webkit-transform: translateY(-50%);
+                                        transform: translateY(-50%);
+                                        height: 1.6rem;
+                                        width: 1.6rem;
+                                        border: 0.1rem solid #284D9C;
+                                        box-sizing: border-box;
+                                        border-radius: 0.4rem;
+                                    }
+                                    /* Create the checkmark/indicator (hidden when not checked) */
+                                    .checkmark:after {
+                                        content: "";
+                                        position: absolute;
+                                        display: none;
+                                    }
+                                    /* Show the checkmark when checked */
+                                    & input:checked~.checkmark:after {
+                                        display: block;
+                                    }
+                                    /* Style the checkmark/indicator */
+                                    & .checkmark:after {
+                                        left: 50%;
+                                        top: 50%;
+                                        width: 0.6rem;
+                                        -webkit-transform: translate(-50%, -50%);
+                                        transform: translate(-50%, -50%);
+                                        height: 0.6rem;
+                                        background: #284D9C;
+                                        border-radius: 0.2rem;
+                                    }
+                                }
+                                .search-in-box {
+                                    position: relative;
+                                    .input-search {
+                                        padding: 1rem 1.2rem;
+                                        width: 100%;
+                                        outline: none;
+                                        border: 0.1rem solid $primary-1;
+                                        box-sizing: border-box;
+                                        border-radius: 0.4rem;
+                                        @include text400-16-19;
+                                    }
+                                    .search-icon {
+                                        width: 1.6rem;
+                                        height: 1.6rem;
+                                        position: absolute;
+                                        top: 50%;
+                                        right: 5%;
+                                        -webkit-transform: translateY(-50%);
+                                        transform: translateY(-50%);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .find-courses {
+                    width: 100%;
+                    border: none;
+                    outline: none;
+                    padding: 2rem;
+                    background: $color1;
+                    border-radius: 4px;
+                    color: $white;
+                    transition: all .3s ease;
+                    -webkit-transition: all .3s ease;
+                    position: relative;
+                    overflow: hidden;
+                    z-index: 1;
+                    &::before {
+                        position: absolute;
+                        content: "";
+                        left: 0;
+                        top: 0;
+                        width: 0;
+                        height: 100%;
+                        transition: all .4s ease;
+                        -webkit-transition: all .4s ease;
+                        background-color: $primary-2;
+                        z-index: -1;
+                    }
+                    &:hover::before {
+                        width: 100%;
+                    }
+                }
+            }
+            .courses-row {
+                padding-bottom: 8rem;
+            }
+        }
+    }
+}
+
+// professor page
+// popular professor
+.popular-professor {
+    padding: 7rem 0;
+    background: url(../img/background2.png) top center / cover no-repeat;
+    .container {
+        .row {
+            gap: 4rem 0;
+            .row-content {
+                color: $white;
+                &-desc {
+                    @include text400-16-19;
+                }
+            }
+            .row-img {
+                position: relative;
+                .img-p-ab {
+                    position: absolute;
+                    bottom: 1rem;
+                    transform: translateX(25%);
+                    -webkit-transform: translateX(25%);
+                }
+            }
+        }
+    }
+}
+
+// professor list
+.professor-list {
+    padding: 10rem 0;
+    .container {
+        .professor-list-header {
+            color: $primary-5;
+            &-desc {
+                @include text600-16-24;
+            }
+        }
+        .professor-slide {
+            .owl-professor-carousel {
+                .owl-stage-outer {
+                    padding-left: 0.3rem;
+                }
+                .professor-element {
+                    .professor-img {
+                        position: relative;
+                        cursor: pointer;
+                        .overlay-professor {
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            background: linear-gradient(0deg, rgba(48, 44, 83, 0.8), rgba(48, 44, 83, 0.8));
+                            border-radius: 50%;
+                            transition: all .3s ease;
+                            -webkit-transition: all .3s ease;
+                            opacity: 0;
+                            pointer-events: none;
+                            &-social {
+                                gap: 0 2rem;
+                                .social-link {
+                                    width: 2.4rem;
+                                    height: 2.4rem;
+                                    transition: all .3s ease;
+                                    -webkit-transition: all .3s ease;
+                                    transform: scale(0);
+                                    -webkit-transform: scale(0);
+                                    opacity: 0;
+                                    svg {
+                                        width: 100%;
+                                        height: 100%;
+                                        fill: $white;
+                                        transition: all .3s ease;
+                                    }
+                                    &:hover {
+                                        svg {
+                                            fill: $primary-8;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        &:hover {
+                            .overlay-professor {
+                                opacity: 1;
+                                pointer-events: all;
+                                &-social {
+                                    .social-link {
+                                        transform: scale(1);
+                                        -webkit-transform: scale(1);
+                                        opacity: 1;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .professor-rank {
+                        @include text600-14-19;
+                        color: rgba(3, 4, 94, 0.5);
+                    }
+                    .professor-name {
+                        @include text600-16-19;
+                        color: $primary-5;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// profile control page
+.profile-control {
+    position: relative;
+    // sidebar
+    path,
+    svg {
+        transition: all .1s ease;
+        -webkit-transition: all .1s ease;
+    }
+    .sidebar-control {
+        width: 20%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: $primary-1;
+        overflow: auto;
+        padding: 3rem 0;
+        &::-webkit-scrollbar {
+            width: 0;
+        }
+        &::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: $primary-8;
+        }
+        .sidebar-menu {
+            &-item {
+                width: 100%;
+                position: relative;
+                cursor: pointer;
+                .menu-link {
+                    color: $white;
+                    @include text600-16-24;
+                    display: block;
+                    padding: 1.5rem 4rem;
+                    z-index: 3;
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 0;
+                    height: 100%;
+                    background: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 3.91%, rgba(255, 255, 255, 0) 100%);
+                    transition: all .3s ease;
+                    -webkit-transition: all .3s ease;
+                    z-index: -1;
+                }
+                &:hover {
+                    &::before {
+                        width: 100%;
+                    }
+                }
+                &.active {
+                    &::before {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    // content
+    .main-content {
+        position: relative;
+        .container {
+            padding: 0 3rem;
+        }
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+        flex: 1;
+        margin-left: 20%;
+        &-menu {
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+            position: sticky;
+            position: -webkit-sticky;
+            top: 0;
+            left: 0;
+            z-index: 99999;
+            background-color: $white;
+            // menu
+            .header-menu {
+                display: inline-flex;
+                .list-icon {
+                    width: 3rem;
+                    svg {
+                        fill: #000;
+                        &:hover {
+                            fill: $primary-1;
+                        }
+                    }
+                }
+                .menu-action {
+                    &-icon {
+                        gap: 0 3rem;
+                        &-item {
+                            width: 2.4rem;
+                            .icon-1 {
+                                fill: #000;
+                                &:hover {
+                                    fill: $primary-1;
+                                }
+                            }
+                            &:not(:nth-child(1)) {
+                                svg:hover {
+                                    .path-svg {
+                                        stroke: $primary-1;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &-account {
+                        padding: 1rem 0 1rem 5rem;
+                        &-avt {
+                            border-radius: 50%;
+                            overflow: hidden;
+                            cursor: pointer;
+                        }
+                        &-name {
+                            @include text600-16-19;
+                        }
+                    }
+                }
+                .menu-bar {
+                    width: 3.6rem;
+                    svg:hover {
+                        fill: $primary-1;
+                    }
+                }
+            }
+        }
+        // body
+        &-section {
+            // panel - tab 1
+            .main-panel {
+                padding: 4rem;
+                background-color: $white;
+                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                .row {
+                    .panel-gesture {
+                        &-heading {
+                            @include text700-22-26;
+                        }
+                        &-time {
+                            @include text600-16-19;
+                        }
+                    }
+                    .panel-progress {
+                        &-item {
+                            .progress-count {
+                                @include text600-24-28;
+                            }
+                            .progress-desc {
+                                @include text600-18-22;
+                            }
+                        }
+                    }
+                }
+            }
+            // courses details -tab1
+            .your-courses {
+                .row {
+                    .img-col {
+                        position: relative;
+                        .courses-thumb-img {
+                            position: absolute;
+                            top: 0;
+                            left: 1.5rem;
+                            height: 100%;
+                            width: 80%;
+                            overflow: hidden;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                    }
+                    .details-col {
+                        &-heading {
+                            @include text700-30-42;
+                        }
+                        &-courses {
+                            &-heading {
+                                @include text600-18-22;
+                            }
+                            &-content {
+                                .details-courses-desc {
+                                    @include text600-16-19;
+                                }
+                                .details-courses-rate {
+                                    .finish-count {
+                                        @include text600-18-22;
+                                        color: $color2;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            // suggest courses - tab1
+            .suggest-courses {
+                &-header {
+                    &-heading {
+                        @include text700-30-42;
+                    }
+                    &-title {
+                        @include text600-16-19;
+                    }
+                }
+                // filter - search
+                &-action {
+                    // filter
+                    &-filter {
+                        @include text600-16-24;
+                        .select {
+                            border-bottom: 0.2rem solid #000;
+                            position: relative;
+                            width: 20rem;
+                            cursor: pointer;
+                            .arrow-icon {
+                                width: 1.4rem;
+                                height: 1.4rem;
+                            }
+                        }
+                        .menu-filter {
+                            position: absolute;
+                            top: 100%;
+                            left: 0;
+                            opacity: 0;
+                            pointer-events: none;
+                            border-radius: 0.4rem;
+                            box-shadow: 0 0.8rem 1.5rem rgb(140 152 164 / 10%);
+                            border: 0.1rem solid #E7E7EC;
+                            transition: all 0.3s ease;
+                            -webkit-transition: all 0.3s ease;
+                            z-index: 3;
+                            background-color: $white;
+                            overflow: hidden;
+                            .filter-item {
+                                padding: 1rem;
+                                transition: all 0.3s ease;
+                                -webkit-transition: all 0.3s ease;
+                                &.active {
+                                    background-color: $primary-1;
+                                    color: $white;
+                                }
+                                &:hover {
+                                    background-color: $primary-1;
+                                    color: $white;
+                                }
+                            }
+                            &.active {
+                                opacity: 1;
+                                pointer-events: all;
+                            }
+                        }
+                    }
+                    // search
+                    &-search {
+                        position: relative;
+                        .filter-search {
+                            border: 2px solid #000;
+                            outline: none;
+                            padding: 1.2rem 2rem 1.2rem 4.6rem;
+                            border-radius: 3rem;
+                        }
+                        .icon-search {
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            -webkit-transform: translateY(-50%);
+                            left: 2rem;
+                            svg {
+                                width: 2rem;
+                                height: 2rem;
+                            }
+                        }
+                    }
+                }
+            }
+            // courses - tab2
+            .my-courses {
+                .courses-row {
+                    .course-element {
+                        .details-courses-rate {
+                            justify-content: end!important;
+                            .finish-count {
+                                @include text600-16-24;
+                                color: $color2;
+                            }
+                        }
+                    }
+                }
+            }
+            // tab account
+            .account-setting {
+                .row {
+                    height: 100vh;
+                    .form-setting {
+                        padding: 4rem 8rem;
+                        background-color: $white;
+                        box-shadow: 0.2rem 0.4rem 1.2rem rgba(0, 0, 0, 0.25);
+                    }
+                }
+            }
+            // tab device login
+            .device {
+                &-login {
+                    table {
+                        border: 0.05rem solid #B5B5B5;
+                        word-break: keep-all;
+                        overflow-x: auto;
+                        th,
+                        td {
+                            padding: 1rem;
+                            vertical-align: middle;
+                        }
+                        thead {
+                            background-color: $primary-1;
+                            color: $white;
+                            box-shadow: 0.3rem 0.2rem 1rem rgba(0, 0, 0, 0.25);
+                            th {
+                                border: none;
+                            }
+                        }
+                        tbody {
+                            tr {
+                                th:first-child {
+                                    color: $primary-2;
+                                }
+                                td:not(:last-child) {
+                                    @include text600-14-19;
+                                    color: $primary-2;
+                                }
+                                .log-out {
+                                    padding: 1rem 2rem;
+                                    background-color: $primary-1;
+                                    color: $white;
+                                    display: inline-block;
+                                    transition: all .3s ease;
+                                    -webkit-transition: all .3s ease;
+                                    &:hover {
+                                        background-color: $primary-2;
+                                    }
+                                }
+                                .icon-logout {
+                                    height: 2.4rem;
+                                    svg {
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            // user information
+            .my-info {
+                .row {
+                    // avt user
+                    .col-avt {
+                        .user-avt {
+                            padding: 1rem;
+                            background-color: $white;
+                            border-radius: 50%;
+                            box-shadow: 0.3rem 0.2rem 1rem rgba(0, 0, 0, 0.25);
+                            position: relative;
+                            .change-avt {
+                                position: absolute;
+                                width: 5rem;
+                                bottom: 0;
+                                left: 50%;
+                                transform: translate(-50%, 50%);
+                                -webkit-transform: translate(-50%, 50%);
+                            }
+                        }
+                        //link social
+                        .user-social-accounts {
+                            &-heading {
+                                @include text700-22-26;
+                            }
+                            &-item {
+                                position: relative;
+                                .social-link {
+                                    padding: 1.5rem 2rem 1.5rem 7rem;
+                                    border-radius: 5rem;
+                                    box-shadow: 0.3rem 0.2rem 1rem rgb(0 0 0 / 25%);
+                                    @include text600-14-19;
+                                    color: $primary-5;
+                                    transition: all .3s ease;
+                                    -webkit-transition: all .3s ease;
+                                    span {
+                                        color: $gray;
+                                    }
+                                    &:hover {
+                                        color: $primary-1;
+                                    }
+                                }
+                                .img-social {
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    height: 100%;
+                                }
+                            }
+                        }
+                    }
+                    // user info
+                    .col-info {
+                        .user-account-info {
+                            .form-info {
+                                .input-box {
+                                    &-field {
+                                        padding: 0.5rem 2rem;
+                                        border: 0.1rem solid $gray2;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// about page 
+// about page - about page
+.about-us {
+    padding: 8rem 0;
+    .container {
+        .row {
+            .about-us-details {
+                .about-heading {
+                    text-transform: none;
+                    color: $primary-5;
+                }
+                .about-text {
+                    @include text600-16-19;
+                    color: $primary-5;
+                }
+            }
+        }
+    }
+}
+
+// role - about page
+.role {
+    padding: 8rem 0;
+    background-color: $primary-1;
+    .container {
+        .row {
+            .role-item {
+                color: $primary-4;
+                .role-heading {
+                    text-transform: none;
+                }
+            }
+        }
+    }
+}
+
+// join with us - about page
+.joinwus {
+    padding: 8rem 0;
+    .container {
+        .joinwus-header {
+            &-heading {
+                text-transform: none;
+                color: $primary-5;
+            }
+        }
+        .joinwus-content {
+            &-desc {
+                color: $primary-1;
+                @include text600-16-19;
+            }
+            &-details {
+                &-heading {
+                    text-transform: none;
+                    color: $primary-5;
+                }
+                &-list {
+                    list-style-type: disc;
+                    color: $primary-1;
+                    @include text600-16-19;
+                }
+            }
+        }
+    }
+}
+
+// courses details page
+.tab-menu-courses {
+    border-bottom: 0.1rem solid #C1C1C1;
+    box-shadow: 0 0.2rem 1.4rem rgba(255, 255, 255, 0.25);
+    &-list {
+        gap: 0 5rem;
+        .tab-menu-courses-item {
+            a {
+                transition: all .3s ease;
+                -webkit-transition: all .3s ease;
+                color: $primary-1;
+                padding: 3rem 0;
+                position: relative;
+                display: block;
+                @include text600-16-19;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: calc(100% + 0.1rem);
+                    transform: translateY(-100%);
+                    -webkit-transform: translateY(-100%);
+                    left: 50%;
+                    right: 50%;
+                    height: 0.5rem;
+                    background-color: $primary-1;
+                    width: 0;
+                    transition: all .3s ease;
+                    -webkit-transition: all .3s ease;
+                    border-radius: 0.2rem;
+                }
+                &.active {
+                    &::before {
+                        width: 100%;
+                        right: 0;
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// courses-details - courses details page
+.tab-menu-courses-content {
+    padding: 7rem 0;
+    .courses-details {
+        color: $primary-1;
+        .heading {
+            color: $primary-5;
+            @include text600-16-19;
+        }
+        .no-heading {
+            @include text600-16-19;
+        }
+        .heading-no-line {
+            color: $primary-5;
+        }
+    }
+    .heading-no-line {
+        color: $primary-5;
+    }
+    .courses-info-details {
+        .courses-details-item {
+            gap: 0 2rem;
+            .courses-icon {
+                width: 2.4rem;
+                height: 2.4rem;
+            }
+            .courses-info {
+                @include text600-16-19;
+                color: $primary-5;
+                ;
+            }
+        }
+    }
+}
+
+// related-courses - courses details page
+.related-courses {
+    background: unset;
+}

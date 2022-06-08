@@ -1,0 +1,505 @@
+    // Global
+    .course-element {
+        overflow: hidden;
+        box-shadow: 0.4rem 0.4rem 1rem rgba(3, 4, 94, 0.8);
+        position: relative;
+        background-color: $white;
+        flex: 1;
+        .courses-thumb {
+            width: 100%;
+            overflow: hidden;
+            cursor: pointer;
+            img {
+                transition: all .3s ease;
+                -webkit-transition: all .3s ease;
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+            .courses-tag {
+                @include text600-14-19;
+                position: absolute;
+                top: 1rem;
+                right: 1rem;
+                padding: 1rem 1.2rem;
+                color: $white;
+                background-color: $primary-1;
+            }
+        }
+        .courses-details {
+            padding: 1.5rem;
+            flex: 1;
+            &-header {
+                @include text600-18-22;
+                color: $primary-2;
+                text-transform: uppercase;
+            }
+            &-content {
+                margin-top: auto;
+                .courses-details-desc {
+                    @include text400-14-19;
+                    color: $primary-5;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                }
+                .courses-less {
+                    gap: 2rem 0!important;
+                    .less-count {
+                        @include text600-14-19;
+                    }
+                }
+                .courses-overview {
+                    gap: 2rem 0!important;
+                    .courses-rating-star {
+                        .courses-rating-count {
+                            margin-top: 0.5rem;
+                            @include text600-14-19;
+                        }
+                    }
+                    .join-courses {
+                        a {
+                            @include text600-14-19;
+                            padding: 1rem 1.2rem;
+                            display: block;
+                            background-color: $primary-1;
+                            color: $white;
+                            transition: all .3s ease;
+                            -webkit-transition: all .3s ease;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    // rating star
+    .courses-rate {
+        background-image: url(../img/rating-stars.png);
+        background-position: 0 -12px;
+        background-repeat: repeat-x;
+        height: 12px;
+        width: 60px;
+        transition: all 0.5s ease-out 0s;
+        -webkit-transition: all 0.5s ease-out 0s;
+        .courses-rating {
+            height: 12px;
+            background-repeat: repeat-x;
+            background-image: url(../img/rating-stars.png);
+            background-position: 0 0;
+        }
+    }
+    
+    // back top top
+    .back-to-top {
+        position: fixed;
+        right: 3rem;
+        bottom: 6rem;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        background-color: $white;
+        box-shadow: 0.2rem 0.2rem 0.6rem rgba(0, 0, 0, 0.25);
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+        -webkit-transition: all .3s ease;
+        transition: all .3 ease;
+        z-index: 999999;
+        cursor: pointer;
+        .icon {
+            width: 1.6rem;
+            -webkit-transition: all .3s ease;
+            transition: all .3 ease;
+            & svg {
+                fill: $primary-5;
+            }
+        }
+        &:hover {
+            .icon {
+                transform: translateY(-0.5rem);
+            }
+        }
+        &.active {
+            opacity: 1;
+            pointer-events: all;
+            visibility: visible;
+        }
+    }
+    
+    // range
+    .details-courses-progress {
+        height: 1rem;
+        border-radius: 10rem;
+        background-color: $color2;
+        position: relative;
+        overflow: hidden;
+        .progress-count-range {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #5297FF;
+            transition: all .1s ease;
+            -webkit-transition: all .1s ease;
+        }
+    }
+    
+    // pagination
+    .row-pagination {
+        gap: 0 2rem;
+        .pagination-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
+            cursor: pointer;
+            color: #104D8D;
+            border: 0.1rem solid $color1;
+            transition: all .3s ease;
+            -webkit-transition: all .3s ease;
+            .pag-icon {
+                width: 1.6rem;
+                height: 1.6rem;
+                svg {
+                    fill: $color1;
+                }
+            }
+            .pag-prev {
+                transform: rotate(-180deg);
+            }
+            &:hover {
+                color: $white;
+                background-color: $color1;
+                .pag-icon {
+                    svg {
+                        fill: $white;
+                    }
+                }
+            }
+            &.active {
+                color: $white;
+                background-color: $color1;
+            }
+        }
+    }
+    
+    // button
+    .btn-all {
+        @include text600-18-22;
+        padding: 1rem 2rem;
+        background-color: $primary-1;
+        color: $white;
+        transition: all .3s ease;
+        -webkit-transition: all .3s ease;
+        position: relative;
+        overflow: hidden;
+        border-radius: 1rem;
+        border: none;
+        display: inline-block;
+        outline: none;
+        &::before {
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 0;
+            width: 0;
+            height: 100%;
+            transition: all .4s ease;
+            -webkit-transition: all .4s ease;
+            background-color: $primary-2;
+            z-index: -1;
+        }
+        &:hover::before {
+            width: 100%;
+        }
+        &:hover {
+            color: $white;
+            transform: translateY(-1rem);
+            -webkit-transform: translateY(-1rem);
+        }
+    }
+    
+    .table-striped tbody tr:nth-of-type(odd) {
+        background-color: #e7e7ec29;
+    }
+    
+    // input
+    .input-box {
+        &-label {
+            @include text600-18-22;
+            &::after {
+                content: ' *';
+                color: #f04725;
+            }
+        }
+        &-field {
+            border: 0.1rem solid #CCCBCB;
+            border-radius: 0.5rem;
+            padding: 1rem 2rem;
+            outline: none;
+        }
+    }
+    
+    .custom-select {
+        cursor: pointer;
+        border: 0.1rem solid #CCCBCB;
+        border-radius: 0.5rem;
+        padding: 0.5rem 2rem;
+        outline: none;
+        height: auto;
+        font-size: unset;
+        background: #fff url('data:image/svg+xml,<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 123.959 123.958" style="enable-background:new 0 0 123.959 123.958;" xml:space="preserve"> <g> <path d="M117.979,28.017h-112c-5.3,0-8,6.4-4.2,10.2l56,56c2.3,2.3,6.1,2.3,8.401,0l56-56 C125.979,34.417,123.279,28.017,117.979,28.017z"/> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg>') right 2rem center/1rem no-repeat;
+        &:focus {
+            border-color: inherit;
+            outline: none;
+            box-shadow: unset;
+        }
+    }
+    
+    .input-heaing {
+        @include text600-18-22;
+    }
+    
+    // overlay
+    .overlay {
+        position: fixed;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 9999998;
+        display: none;
+        transition: all .3s ease;
+        -webkit-transition: all .3s ease;
+        &.active {
+            display: block;
+        }
+    }
+    
+    .profile-control .sidebar-control.open-menu {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+    }
+    
+    // 404 page
+    .header-404 {
+        .header-top {
+            // position: unset;
+            background-color: $white;
+            box-shadow: 0 0.2rem 1.4rem rgb(0 0 0 / 15%);
+            .container {
+                .nav-menu {
+                    .menu {
+                        &-item {
+                            a {
+                                color: $primary-5;
+                            }
+                            .sub-menu {
+                                background-color: $white;
+                                border-radius: 0.5rem;
+                                box-shadow: 0 0.2rem 0.5rem rgb(0 0 0 / 25%);
+                                .menu-child {
+                                    &-item {
+                                        a {
+                                            @include text600-16-24;
+                                        }
+                                    }
+                                    &-item:hover {
+                                        background-color: $primary-1;
+                                        a {
+                                            color: $white;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        &-item::before {
+                            background-color: $primary-1;
+                        }
+                    }
+                }
+                .menu-bar {
+                    .menu-bar-icon {
+                        &::before,
+                        &::after {
+                            background-color: $primary-5;
+                        }
+                        & span {
+                            background-color: $primary-5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    // main 404
+    .page-not-found {
+        padding: 13rem 0 10rem;
+        .container {
+            .page-404 {
+                position: relative;
+                animation: tada 1s linear;
+                .noise-img {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    -webkit-transform: translate(-50%, -50%);
+                    z-index: -1;
+                    width: 99%;
+                    height: 99%;
+                    object-fit: contain;
+                }
+            }
+            .page-title {
+                animation: flipInX 1s linear;
+                &-heading {
+                    @include text700-48-56;
+                }
+                &-desc {
+                    @include text600-18-22;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+    
+    // line
+    .courses-details-heading {
+        position: relative;
+        color: $primary-5;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 0;
+            height: 0.1rem;
+            width: 30rem;
+            background-color: #C1C1C1;
+        }
+    }
+    
+    rect {
+        width: 100%;
+        height: 100%;
+    }
+    
+    // login
+    .login {
+        height: 100vh;
+        .row {
+            .header-login {
+                @include text600-24-28;
+            }
+            .col-left {
+                background-color: $primary-1;
+                .login-col-left {
+                    padding: 4rem 5rem;
+                    .login-img {
+                        animation: flipInY 1s linear;
+                    }
+                }
+            }
+            .col-right {
+                .login-main {
+                    padding: 4rem 3rem;
+                    .header-text {
+                        color: $primary-5;
+                    }
+                    .login-logo {
+                        animation: fadeInUp .6s linear;
+                    }
+                    .login-form {
+                        .input-group {
+                            border-bottom: 0.2rem solid $primary-1;
+                            input {
+                                border: none;
+                                outline: none;
+                                color: $primary-1;
+                                @include text600-16-19;
+                                &::placeholder {
+                                    color: rgba(1, 2, 75, 0.6);
+                                    @include text600-16-19;
+                                }
+                                &:-ms-input-placeholder {
+                                    color: rgba(1, 2, 75, 0.6);
+                                    @include text600-16-19;
+                                }
+                                &::-ms-input-placeholder {
+                                    color: rgba(1, 2, 75, 0.6);
+                                    @include text600-16-19;
+                                }
+                            }
+                        }
+                        .remember-login {
+                            color: rgba(1, 2, 75, 0.6);
+                            @include text600-16-19;
+                            .remember-check {
+                                display: block;
+                                position: relative;
+                                padding-left: 3rem;
+                                cursor: pointer;
+                                -webkit-user-select: none;
+                                -moz-user-select: none;
+                                -ms-user-select: none;
+                                user-select: none;
+                            }
+                            .remember-check input {
+                                position: absolute;
+                                opacity: 0;
+                                cursor: pointer;
+                                height: 0;
+                                width: 0;
+                            }
+                            .checkmark {
+                                position: absolute;
+                                top: 50%;
+                                left: 0;
+                                height: 2rem;
+                                width: 2rem;
+                                border: 0.1rem solid #01024B;
+                                box-sizing: border-box;
+                                border-radius: 0.5rem;
+                                -webkit-transform: translateY(-50%);
+                                transform: translateY(-50%);
+                            }
+                            .remember-check input:checked~.checkmark {
+                                background-color: rgba(1, 2, 75, 0.6);
+                            }
+                            .checkmark:after {
+                                content: "";
+                                position: absolute;
+                                display: none;
+                            }
+                            .remember-check input:checked~.checkmark:after {
+                                display: block;
+                            }
+                            .remember-check .checkmark:after {
+                                left: 50%;
+                                top: 50%;
+                                width: 0.5rem;
+                                height: 1rem;
+                                border: solid white;
+                                border-width: 0 0.2rem 0.2rem 0;
+                                -webkit-transform: translate(-50%, -60%) rotate(45deg);
+                                -ms-transform: translate(-50%, -60%) rotate(45deg);
+                                transform: translate(-50%, -60%) rotate(45deg);
+                            }
+                            a {
+                                color: rgba(1, 2, 75, 0.6);
+                                @include text600-16-19;
+                            }
+                        }
+                        .btn-all {
+                            &:hover {
+                                transform: translateY(0);
+                                -webkit-transform: translateY(0);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }

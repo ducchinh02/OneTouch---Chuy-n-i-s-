@@ -1,0 +1,65 @@
+.footer {
+    background-color: $primary-1;
+    color: $white;
+    .container {
+        padding: 6rem 1.5rem;
+        .content-row {
+            gap: 4rem 0;
+            .col-left {
+                .site-desc-footer {
+                    @include text600-18-22;
+                    text-transform: uppercase;
+                }
+                .footer-contact-info {
+                    .list-contact {
+                        .footer-icon {
+                            width: 1.6rem;
+                            & svg {
+                                fill: $white;
+                            }
+                        }
+                        .contact-item {
+                            @include text400-16-19;
+                        }
+                    }
+                }
+            }
+            .col-right {
+                .d-flex {
+                    gap: 0 4rem;
+                }
+                .menu-item {
+                    h2 {
+                        text-transform: uppercase;
+                        @include text600-18-22;
+                        line-height: 2.2rem;
+                    }
+                    a {
+                        display: block;
+                        @include text400-16-19;
+                        color: $white;
+                        line-height: 1.9rem;
+                        transition: all .3s ease;
+                        -webkit-transition: all .3s ease;
+                        &:hover {
+                            color: $primary-8;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .copy-right {
+        position: relative;
+        @include text400-12-19;
+        &::before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 20%;
+            right: 20%;
+            height: 0.1rem;
+            background: rgba(255, 255, 255, 0.15);
+        }
+    }
+}

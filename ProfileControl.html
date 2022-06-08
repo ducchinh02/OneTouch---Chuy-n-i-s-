@@ -1,0 +1,1336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng điều khiển</title>
+    <link rel="icon" href="./img/onetouch.svg" type="img/x-icon">
+    <!-- boostrap -->
+    <link rel="stylesheet" href="./css/boostrap/bootstrap.min.css">
+    <!-- css -->
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <!-- animate -->
+    <link rel="stylesheet" href="./css/animate.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <!-- Jquery -->
+    <script src="./js/jquery.min.js"></script>
+    <link href="./css/summernote.min.css" rel="stylesheet">
+    <script src="./js/summernote.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+
+</head>
+
+<body>
+    <div class="profile-control d-flex">
+        <!-- overlay -->
+        <div class="overlay"></div>
+        <!-- sidebar control -->
+        <div class="sidebar-control ">
+            <!-- logo -->
+            <div class="sidebar-logo">
+                <a href="Home.html">
+                    <img src="./img/sidebar-logo.webp" class="m-auto" alt="Logo">
+                </a>
+            </div>
+            <!-- menu -->
+            <ul class="sidebar-menu mt-5r nav" role="tablist">
+
+                <li class="sidebar-menu-item tab-item" role="presentation">
+                    <a class="menu-link tab-link active" href="#courses" role="tab" data-toggle="tab">Bảng điều khiển</a>
+                </li>
+                <li class="sidebar-menu-item tab-item" role="presentation">
+                    <a class="menu-link tab-link" href="#courses2" role="tab" data-toggle="tab">Khóa học của tôi</a>
+                </li>
+                <li class="sidebar-menu-item tab-item" role="presentation">
+                    <a class="menu-link tab-link" href="#quizzes" role="tab" data-toggle="tab">Quizzes của tôi</a>
+                </li>
+                <li class="sidebar-menu-item tab-item" role="presentation">
+                    <a class="menu-link tab-link" href="#onlinecourses" role="tab" data-toggle="tab">Lớp học trực tuyến</a>
+                </li>
+                <li class="sidebar-menu-item tab-item" role="presentation">
+                    <a class="menu-link tab-link" href="#notifications" role="tab" data-toggle="tab">Cài đặt thông báo</a>
+                </li>
+                <li class="sidebar-menu-item tab-item" role="presentation">
+                    <a class="menu-link tab-link" href="#certificate" role="tab" data-toggle="tab">Chứng chỉ</a>
+                </li>
+                <li class="sidebar-menu-item tab-item" role="presentation">
+                    <a class="menu-link tab-link" href="#history" role="tab" data-toggle="tab">Lịch sử thanh toán</a>
+                </li>
+                <li class="sidebar-menu-item tab-item" role="presentation">
+                    <a class="menu-link tab-link" href="#information" role="tab" data-toggle="tab">Thông tin của tôi</a>
+                </li>
+                <li class="sidebar-menu-item tab-item" role="presentation">
+                    <a class="menu-link tab-link" href="#accountsetting" role="tab" data-toggle="tab">Cài đặt tài khoản</a>
+                </li>
+                <li class="sidebar-menu-item tab-item" role="presentation">
+                    <a class="menu-link tab-link" href="#deposit" role="tab" data-toggle="tab">Đặt cọc trước</a>
+                </li>
+                <li class="sidebar-menu-item tab-item" role="presentation">
+                    <a class="menu-link tab-link" href="#devicelogin" role="tab" data-toggle="tab">Thiết bị đã đăng nhập</a>
+                </li>
+                <li class="sidebar-menu-item tab-item" role="presentation">
+                    <a class="menu-link tab-link" href="#mycourses" role="tab" data-toggle="tab">Khóa học của tôi</a></li>
+            </ul>
+        </div>
+        <!-- main content -->
+        <main class="main-content pb-4r">
+            <!-- menu -->
+            <div class="main-content-menu w-100 mb-4r">
+                <div class="header-menu w-100">
+                    <div class="container d-flex align-items-center justify-content-between ">
+                        <div class="list-icon h-100">
+                            <svg viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M32.1429 35.7955V41.9318C32.1429 42.7841 32.3772 43.5085 32.846 44.1051C33.3147 44.7017 33.8839 45 34.5536 45H42.5893C43.2589 45 43.8281 44.7017 44.2969 44.1051C44.7656 43.5085 45 42.7841 45 41.9318V35.7955C45 34.9432 44.7656 34.2188 44.2969 33.6222C43.8281 33.0256 43.2589 32.7273 42.5893 32.7273H34.5536C33.8839 32.7273 33.3147 33.0256 32.846 33.6222C32.3772 34.2188 32.1429 34.9432 32.1429 35.7955ZM32.1429 19.4318V25.5682C32.1429 26.4205 32.3772 27.1449 32.846 27.7415C33.3147 28.3381 33.8839 28.6364 34.5536 28.6364H42.5893C43.2589 28.6364 43.8281 28.3381 44.2969 27.7415C44.7656 27.1449 45 26.4205 45 25.5682V19.4318C45 18.5795 44.7656 17.8551 44.2969 17.2585C43.8281 16.6619 43.2589 16.3636 42.5893 16.3636H34.5536C33.8839 16.3636 33.3147 16.6619 32.846 17.2585C32.3772 17.8551 32.1429 18.5795 32.1429 19.4318ZM16.0714 35.7955V41.9318C16.0714 42.7841 16.3058 43.5085 16.7746 44.1051C17.2433 44.7017 17.8125 45 18.4821 45H26.5179C27.1875 45 27.7567 44.7017 28.2254 44.1051C28.6942 43.5085 28.9286 42.7841 28.9286 41.9318V35.7955C28.9286 34.9432 28.6942 34.2188 28.2254 33.6222C27.7567 33.0256 27.1875 32.7273 26.5179 32.7273H18.4821C17.8125 32.7273 17.2433 33.0256 16.7746 33.6222C16.3058 34.2188 16.0714 34.9432 16.0714 35.7955ZM32.1429 3.06818V9.20455C32.1429 10.0568 32.3772 10.7812 32.846 11.3778C33.3147 11.9744 33.8839 12.2727 34.5536 12.2727H42.5893C43.2589 12.2727 43.8281 11.9744 44.2969 11.3778C44.7656 10.7812 45 10.0568 45 9.20455V3.06818C45 2.21591 44.7656 1.49148 44.2969 0.894886C43.8281 0.298295 43.2589 0 42.5893 0H34.5536C33.8839 0 33.3147 0.298295 32.846 0.894886C32.3772 1.49148 32.1429 2.21591 32.1429 3.06818ZM16.0714 19.4318V25.5682C16.0714 26.4205 16.3058 27.1449 16.7746 27.7415C17.2433 28.3381 17.8125 28.6364 18.4821 28.6364H26.5179C27.1875 28.6364 27.7567 28.3381 28.2254 27.7415C28.6942 27.1449 28.9286 26.4205 28.9286 25.5682V19.4318C28.9286 18.5795 28.6942 17.8551 28.2254 17.2585C27.7567 16.6619 27.1875 16.3636 26.5179 16.3636H18.4821C17.8125 16.3636 17.2433 16.6619 16.7746 17.2585C16.3058 17.8551 16.0714 18.5795 16.0714 19.4318ZM0 35.7955V41.9318C0 42.7841 0.234375 43.5085 0.703125 44.1051C1.17188 44.7017 1.74107 45 2.41072 45H10.4464C11.1161 45 11.6853 44.7017 12.154 44.1051C12.6228 43.5085 12.8571 42.7841 12.8571 41.9318V35.7955C12.8571 34.9432 12.6228 34.2188 12.154 33.6222C11.6853 33.0256 11.1161 32.7273 10.4464 32.7273H2.41072C1.74107 32.7273 1.17188 33.0256 0.703125 33.6222C0.234375 34.2188 0 34.9432 0 35.7955ZM16.0714 3.06818V9.20455C16.0714 10.0568 16.3058 10.7812 16.7746 11.3778C17.2433 11.9744 17.8125 12.2727 18.4821 12.2727H26.5179C27.1875 12.2727 27.7567 11.9744 28.2254 11.3778C28.6942 10.7812 28.9286 10.0568 28.9286 9.20455V3.06818C28.9286 2.21591 28.6942 1.49148 28.2254 0.894886C27.7567 0.298295 27.1875 0 26.5179 0H18.4821C17.8125 0 17.2433 0.298295 16.7746 0.894886C16.3058 1.49148 16.0714 2.21591 16.0714 3.06818ZM0 19.4318V25.5682C0 26.4205 0.234375 27.1449 0.703125 27.7415C1.17188 28.3381 1.74107 28.6364 2.41072 28.6364H10.4464C11.1161 28.6364 11.6853 28.3381 12.154 27.7415C12.6228 27.1449 12.8571 26.4205 12.8571 25.5682V19.4318C12.8571 18.5795 12.6228 17.8551 12.154 17.2585C11.6853 16.6619 11.1161 16.3636 10.4464 16.3636H2.41072C1.74107 16.3636 1.17188 16.6619 0.703125 17.2585C0.234375 17.8551 0 18.5795 0 19.4318ZM0 3.06818V9.20455C0 10.0568 0.234375 10.7812 0.703125 11.3778C1.17188 11.9744 1.74107 12.2727 2.41072 12.2727H10.4464C11.1161 12.2727 11.6853 11.9744 12.154 11.3778C12.6228 10.7812 12.8571 10.0568 12.8571 9.20455V3.06818C12.8571 2.21591 12.6228 1.49148 12.154 0.894886C11.6853 0.298295 11.1161 0 10.4464 0H2.41072C1.74107 0 1.17188 0.298295 0.703125 0.894886C0.234375 1.49148 0 2.21591 0 3.06818Z" />
+                                </svg>
+                        </div>
+                        <div class="menu-action h-100 d-flex align-items-center">
+                            <div class="menu-action-icon d-flex align-items-center h-100">
+                                <div class="menu-action-icon-item h-100">
+                                    <svg class="icon-1" width="24" height="24" viewBox="0 0 22 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18.6869 14.4825V10C18.6869 5.97875 16.1349 2.59125 12.6779 1.5725C12.3357 0.65 11.4994 0 10.5114 0C9.5233 0 8.68706 0.65 8.34486 1.5725C4.88778 2.5925 2.33586 5.97875 2.33586 10V14.4825L0.342204 16.6162C0.233537 16.7321 0.147358 16.8699 0.0886288 17.0215C0.0298991 17.1732 -0.000221263 17.3358 1.22361e-06 17.5V20C1.22361e-06 20.3315 0.12305 20.6495 0.34208 20.8839C0.561109 21.1183 0.858176 21.25 1.16793 21.25H19.8548C20.1646 21.25 20.4616 21.1183 20.6806 20.8839C20.8997 20.6495 21.0227 20.3315 21.0227 20V17.5C21.0229 17.3358 20.9928 17.1732 20.9341 17.0215C20.8754 16.8699 20.7892 16.7321 20.6805 16.6162L18.6869 14.4825ZM18.6869 18.75H2.33586V18.0175L4.32951 15.8837C4.43818 15.7679 4.52436 15.6301 4.58309 15.4785C4.64182 15.3268 4.67194 15.1642 4.67172 15V10C4.67172 6.55375 7.29138 3.75 10.5114 3.75C13.7313 3.75 16.351 6.55375 16.351 10V15C16.351 15.3325 16.4736 15.65 16.6932 15.8837L18.6869 18.0175V18.75ZM10.5114 25C11.2347 25.001 11.9403 24.7607 12.5301 24.3127C13.12 23.8647 13.5647 23.2311 13.8026 22.5H7.22014C7.458 23.2311 7.90277 23.8647 8.49261 24.3127C9.08245 24.7607 9.78807 25.001 10.5114 25Z" />
+                                        </svg>
+
+                                </div>
+                                <div class="menu-action-icon-item h-100">
+                                    <svg width="24" height="24" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="path-svg" d="M9.11806 2C5.18747 2 2 5.10651 2 8.93918C2 12.0331 3.24566 19.376 15.5072 26.7988C15.7269 26.9304 15.979 27 16.2361 27C16.4932 27 16.7454 26.9304 16.965 26.7988C29.2266 19.376 30.4722 12.0331 30.4722 8.93918C30.4722 5.10651 27.2848 2 23.3542 2C19.4236 2 16.2361 6.20556 16.2361 6.20556C16.2361 6.20556 13.0486 2 9.11806 2Z" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+
+                                </div>
+                                <div class="menu-action-icon-item h-100">
+                                    <svg width="24" height="24" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="path-svg" d="M5.88635 7.55554H23.7511C24.1131 7.55556 24.4711 7.63689 24.8019 7.7943C25.1328 7.95171 25.4292 8.1817 25.6721 8.46945C25.915 8.7572 26.099 9.09632 26.2121 9.46495C26.3253 9.83359 26.3652 10.2236 26.3291 10.6097L25.5518 18.943C25.4879 19.6285 25.1887 20.264 24.7123 20.7262C24.2359 21.1884 23.6163 21.4444 22.9738 21.4444H10.6019C10.0027 21.4447 9.42197 21.2223 8.95853 20.8151C8.49509 20.4079 8.17762 19.841 8.06018 19.2111L5.88635 7.55554Z" stroke="black" stroke-width="3" stroke-linejoin="round"/>
+                                        <path d="M20.1368 27H22.7278M5.88646 7.55556L4.83712 3.05139C4.76694 2.75105 4.60516 2.48446 4.37749 2.29397C4.14981 2.10348 3.8693 2.00001 3.58049 2H2L5.88646 7.55556ZM9.77292 27H12.3639H9.77292Z" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+
+                                </div>
+                            </div>
+                            <div class="menu-action-account d-flex align-items-center ">
+                                <div class="menu-action-account-avt">
+                                    <img src="./img/avt1.webp" alt="Avatar">
+                                </div>
+                                <div class="menu-action-account-name pl-1-5">Nguyễn Văn A</div>
+                            </div>
+                        </div>
+                        <!-- menu bar -->
+                        <div class="menu-bar">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 384.97 384.97" style="enable-background:new 0 0 384.97 384.97;" xml:space="preserve"><g><g id="Menu_1_">
+		<path d="M12.03,120.303h360.909c6.641,0,12.03-5.39,12.03-12.03c0-6.641-5.39-12.03-12.03-12.03H12.03
+			c-6.641,0-12.03,5.39-12.03,12.03C0,114.913,5.39,120.303,12.03,120.303z"/>
+		<path d="M372.939,180.455H12.03c-6.641,0-12.03,5.39-12.03,12.03s5.39,12.03,12.03,12.03h360.909c6.641,0,12.03-5.39,12.03-12.03
+			S379.58,180.455,372.939,180.455z"/>
+		<path d="M372.939,264.667H132.333c-6.641,0-12.03,5.39-12.03,12.03c0,6.641,5.39,12.03,12.03,12.03h240.606
+			c6.641,0,12.03-5.39,12.03-12.03C384.97,270.056,379.58,264.667,372.939,264.667z"/></g></g></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- content -->
+            <div class="main-content-section ">
+                <div class="container tab-content">
+                    <!-- tab 1 -->
+                    <div class="tab-pane fade show active" role="tabpanel" id="courses">
+                        <!-- panel -->
+                        <div class="main-panel br-10">
+                            <div class="row gap-3">
+                                <div class="col-lg-7 col-md-12 col-sm-12 panel-gesture">
+                                    <div class="panel-gesture-heading pb-4r">Chào buổi sáng
+                                        <span class="name pl-1-5">Nguyễn Văn A</span>
+                                    </div>
+                                    <div class="panel-gesture-time">
+                                        Thứ 2, ngày 28 tháng 2 năm 2022
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-md-12 col-sm-12 panel-progress">
+                                    <div class="row gap-3">
+                                        <div class="col-lg-6 col-md-6 col-sm-12 panel-progress-item text-center">
+                                            <div class="progress-count pb-4r" data-count="5">0</div>
+                                            <div class="progress-desc">Khóa đang tiến hành</div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 panel-progress-item text-center">
+                                            <div class="progress-count pb-4r" data-count="8">0</div>
+                                            <div class="progress-desc">Khóa đã hoàn thành</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- your course -->
+                        <div class="your-courses py-7r">
+                            <div class="row gap-3">
+                                <div class="col-lg-6 col-md-12 col-sm-12 img-col">
+                                    <div class="courses-thumb-img br-10">
+                                        <img src="./img/thumb.webp" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12 col-sm-12 details-col">
+                                    <div class="details-col-heading header-sub pb-2r">
+                                        CHUYỂN ĐỔI SỐ CẤP XÃ
+                                    </div>
+                                    <div class="details-col-courses">
+                                        <div class="details-col-courses-heading pb-1-5">
+                                            Nội dung khóa học:
+                                        </div>
+                                        <div class="details-col-courses-content">
+                                            <div class="details-courses-desc pb-1-5">Cung cấp cho người học những kiến thức cơ bản về chuyển đổi số cấp xã, những lợi ích khi tiến hành chuyển đổi số</div>
+                                            <div class="details-courses-progress w-100">
+                                                <div class="progress-count-range h-100" data-progress="76"></div>
+                                            </div>
+                                            <div class="details-courses-rate pt-2r d-flex justify-content-between align-items-center">
+                                                <div class="finish-count"><span class="number">76%</span> Hoàn thành</div>
+                                                <div class="courses-rate d-inline-block ">
+                                                    <div class="courses-rating " style="width: 100% "></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- suggest course -->
+                        <div class="suggest-courses">
+                            <!-- header -->
+                            <div class="suggest-courses-header">
+                                <div class="suggest-courses-header-heading pb-2r header-sub">ĐỀ XUẤT CHO BẠN</div>
+                                <div class="suggest-courses-header-title">Bạn đã sẵn sàng cho bài học tiếp theo chưa?</div>
+                            </div>
+                            <!-- courses -->
+                            <div class="row courses-row gap-3 pt-4r">
+                                <!-- course item -->
+                                <div class="col-lg-4 col-md-6 col-sm-12 d-flex flex-column course-item ">
+                                    <div class="course-element br-10 d-flex flex-column ">
+                                        <div class="courses-thumb ">
+                                            <a href="# " class="courses-link ">
+                                                <img src="./img/thumb.webp " class="w-100 " alt="thumb ">
+                                                <div class="courses-tag br-10 ">Khóa cơ bản</div>
+                                            </a>
+                                        </div>
+                                        <div class="courses-details d-flex flex-column ">
+                                            <a href="# " class="courses-link ">
+                                                <div class="courses-details-header pb-2r ">CHUYỂN ĐỔI SỐ CẤP XÃ</div>
+                                            </a>
+                                            <div class="courses-details-content d-flex flex-column ">
+                                                <div class="courses-details-desc ">Cung cấp cho người học những kiến thức cơ bản về chuyển đổi số cấp xã, những lợi ích khi tiến hành chuyển đổi số</div>
+                                                <div class="courses-less row no-gutters pt-2r align-items-center justify-content-between pb-2r ">
+                                                    <div class="total-less d-flex align-items-center col-sm-6 ">
+                                                        <div class="less-icon ">
+                                                            <img src="./img/book.svg " alt=" ">
+                                                        </div>
+                                                        <div class="less-count ml-2 ">43 bài học</div>
+                                                    </div>
+                                                    <div class="count-learning d-flex align-items-center col-sm-6 ">
+                                                        <div class="less-icon ">
+                                                            <img src="./img/group.svg " alt=" ">
+                                                        </div>
+                                                        <div class="less-count ml-2 ">1000 học viên</div>
+                                                    </div>
+                                                </div>
+                                                <div class="courses-overview row no-gutters align-items-center justify-content-between ">
+                                                    <div class="courses-rating-star col-12 col-lg-6 col-md-6 ">
+                                                        <div class="courses-rate d-inline-block ">
+                                                            <div class="courses-rating " style="width: 100% "></div>
+                                                        </div>
+                                                        <div class="courses-rating-count ">
+                                                            4.87 (3.8k+ học viên)
+                                                        </div>
+                                                    </div>
+                                                    <div class="join-courses col-12 col-lg-6 col-md-6 text-center ">
+                                                        <a href="# " class="br-10 course-link-btn ">Tham Gia</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- course item -->
+                                <div class="col-lg-4 col-md-6 col-sm-12 d-flex flex-column course-item ">
+                                    <div class="course-element br-10 d-flex flex-column ">
+                                        <div class="courses-thumb ">
+                                            <a href="# " class="courses-link ">
+                                                <img src="./img/thumb.webp " class="w-100 " alt="thumb ">
+                                                <div class="courses-tag br-10 ">Khóa cơ bản</div>
+                                            </a>
+                                        </div>
+                                        <div class="courses-details d-flex flex-column ">
+                                            <a href="# " class="courses-link ">
+                                                <div class="courses-details-header pb-2r ">CHUYỂN ĐỔI SỐ CẤP XÃ</div>
+                                            </a>
+                                            <div class="courses-details-content d-flex flex-column ">
+                                                <div class="courses-details-desc ">Cung cấp cho người học những kiến thức cơ bản về chuyển đổi số cấp xã, những lợi ích khi tiến hành chuyển đổi số</div>
+                                                <div class="courses-less row no-gutters pt-2r align-items-center justify-content-between pb-2r ">
+                                                    <div class="total-less d-flex align-items-center col-sm-6 ">
+                                                        <div class="less-icon ">
+                                                            <img src="./img/book.svg " alt=" ">
+                                                        </div>
+                                                        <div class="less-count ml-2 ">43 bài học</div>
+                                                    </div>
+                                                    <div class="count-learning d-flex align-items-center col-sm-6 ">
+                                                        <div class="less-icon ">
+                                                            <img src="./img/group.svg " alt=" ">
+                                                        </div>
+                                                        <div class="less-count ml-2 ">1000 học viên</div>
+                                                    </div>
+                                                </div>
+                                                <div class="courses-overview row no-gutters align-items-center justify-content-between ">
+                                                    <div class="courses-rating-star col-12 col-lg-6 col-md-6 ">
+                                                        <div class="courses-rate d-inline-block ">
+                                                            <div class="courses-rating " style="width: 100% "></div>
+                                                        </div>
+                                                        <div class="courses-rating-count ">
+                                                            4.87 (3.8k+ học viên)
+                                                        </div>
+                                                    </div>
+                                                    <div class="join-courses col-12 col-lg-6 col-md-6 text-center ">
+                                                        <a href="# " class="br-10 course-link-btn ">Tham Gia</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- course item -->
+                                <div class="col-lg-4 col-md-6 col-sm-12 d-flex flex-column course-item ">
+                                    <div class="course-element br-10 d-flex flex-column ">
+                                        <div class="courses-thumb ">
+                                            <a href="# " class="courses-link ">
+                                                <img src="./img/thumb.webp " class="w-100 " alt="thumb ">
+                                                <div class="courses-tag br-10 ">Khóa cơ bản</div>
+                                            </a>
+                                        </div>
+                                        <div class="courses-details d-flex flex-column ">
+                                            <a href="# " class="courses-link ">
+                                                <div class="courses-details-header pb-2r ">CHUYỂN ĐỔI SỐ CẤP XÃ</div>
+                                            </a>
+                                            <div class="courses-details-content d-flex flex-column ">
+                                                <div class="courses-details-desc ">Cung cấp cho người học những kiến thức cơ bản về chuyển đổi số cấp xã, những lợi ích khi tiến hành chuyển đổi số</div>
+                                                <div class="courses-less row no-gutters pt-2r align-items-center justify-content-between pb-2r ">
+                                                    <div class="total-less d-flex align-items-center col-sm-6 ">
+                                                        <div class="less-icon ">
+                                                            <img src="./img/book.svg " alt=" ">
+                                                        </div>
+                                                        <div class="less-count ml-2 ">43 bài học</div>
+                                                    </div>
+                                                    <div class="count-learning d-flex align-items-center col-sm-6 ">
+                                                        <div class="less-icon ">
+                                                            <img src="./img/group.svg " alt=" ">
+                                                        </div>
+                                                        <div class="less-count ml-2 ">1000 học viên</div>
+                                                    </div>
+                                                </div>
+                                                <div class="courses-overview row no-gutters align-items-center justify-content-between ">
+                                                    <div class="courses-rating-star col-12 col-lg-6 col-md-6 ">
+                                                        <div class="courses-rate d-inline-block ">
+                                                            <div class="courses-rating " style="width: 100% "></div>
+                                                        </div>
+                                                        <div class="courses-rating-count ">
+                                                            4.87 (3.8k+ học viên)
+                                                        </div>
+                                                    </div>
+                                                    <div class="join-courses col-12 col-lg-6 col-md-6 text-center ">
+                                                        <a href="# " class="br-10 course-link-btn ">Tham Gia</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- tab 2 -->
+                    <div class="tab-pane fade my-courses" role="tabpanel" id="courses2">
+                        <!-- suggest course -->
+                        <div class="suggest-courses">
+                            <!-- header -->
+                            <div class="suggest-courses-header">
+                                <div class="suggest-courses-header-heading pb-2r header-sub">KHÓA HỌC CỦA TÔI</div>
+                                <div class="suggest-courses-action d-lg-flex d-block justify-content-between align-items-center">
+                                    <div class="suggest-courses-action-filter d-flex align-items-center">
+                                        <span class="pr-1-5">Lọc bởi</span>
+                                        <span class="select d-flex py-1 justify-content-between"><span class="text-select">Tất cả danh mục</span>
+                                        <div class="arrow-icon ml-3">
+                                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="123.959px" height="123.958px" viewBox="0 0 123.959 123.958" style="enable-background:new 0 0 123.959 123.958;" xml:space="preserve"> <g> <path d="M117.979,28.017h-112c-5.3,0-8,6.4-4.2,10.2l56,56c2.3,2.3,6.1,2.3,8.401,0l56-56 C125.979,34.417,123.279,28.017,117.979,28.017z"/> </g></svg>
+                                        </div>
+                                        <!-- options select -->
+                                        <div class="menu-filter w-100 mt-2r">
+                                            <div class="filter-item">Tất cả danh mục</div>
+                                            <div class="filter-item">1</div>
+                                            <div class="filter-item">2</div>
+                                            <div class="filter-item">3</div>
+                                            <div class="filter-item">4</div>
+                                        </div>
+                                        </span>
+                                    </div>
+                                    <form action="" class="suggest-courses-action-search">
+                                        <input type="text" required placeholder="Tìm kiếm" class="filter-search w-100">
+                                        <div class="icon-search">
+                                            <svg viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M36.9513 37.6879L24.9009 25.1727M28.6521 16.11C28.6521 19.5117 27.3008 22.774 24.8954 25.1794C22.4901 27.5847 19.2277 28.936 15.8261 28.936C12.4244 28.936 9.16202 27.5847 6.75666 25.1794C4.35131 22.774 3 19.5117 3 16.11C3 12.7083 4.35131 9.44595 6.75666 7.0406C9.16202 4.63525 12.4244 3.28394 15.8261 3.28394C19.2277 3.28394 22.4901 4.63525 24.8954 7.0406C27.3008 9.44595 28.6521 12.7083 28.6521 16.11Z" stroke="black" stroke-width="5" stroke-linecap="round"/>
+                                                </svg>
+
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- courses -->
+                            <div class="row courses-row gap-3 mt-5r">
+                                <!-- course item -->
+                                <div class="col-lg-4 col-md-6 col-sm-12 d-flex flex-column course-item ">
+                                    <div class="course-element br-10 d-flex flex-column ">
+                                        <div class="courses-thumb ">
+                                            <a href="# " class="courses-link ">
+                                                <img src="./img/thumb.webp " class="w-100 " alt="thumb ">
+
+                                            </a>
+                                        </div>
+                                        <div class="courses-details d-flex flex-column ">
+                                            <a href="# " class="courses-link ">
+                                                <div class="courses-details-header pb-2r ">CHUYỂN ĐỔI SỐ CẤP XÃ</div>
+                                            </a>
+                                            <div class="courses-details-content d-flex flex-column ">
+                                                <div class="details-courses-progress w-100">
+                                                    <div class="progress-count-range h-100" data-progress="76"></div>
+                                                </div>
+                                                <div class="details-courses-rate pt-2r d-flex justify-content-between align-items-center">
+                                                    <div class="finish-count"><span class="number">76%</span> Hoàn thành</div>
+                                                </div>
+                                                <div class="courses-less row no-gutters pt-2r align-items-center justify-content-between pb-2r ">
+                                                    <div class="total-less d-flex align-items-center col-sm-6 ">
+                                                        <div class="less-icon ">
+                                                            <img src="./img/book.svg " alt=" ">
+                                                        </div>
+                                                        <div class="less-count ml-2 ">43 bài học</div>
+                                                    </div>
+                                                    <div class="count-learning d-flex align-items-center col-sm-6 ">
+                                                        <div class="less-icon ">
+                                                            <img src="./img/group.svg " alt=" ">
+                                                        </div>
+                                                        <div class="less-count ml-2 ">1000 học viên</div>
+                                                    </div>
+                                                </div>
+                                                <div class="courses-overview row no-gutters align-items-center justify-content-between ">
+                                                    <div class="courses-rating-star col-12 col-lg-6 col-md-6 ">
+                                                        <div class="courses-rate d-inline-block ">
+                                                            <div class="courses-rating " style="width: 100% "></div>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="join-courses col-12 col-lg-6 col-md-6 text-center ">
+                                                        <a href="# " class="br-10 course-link-btn ">Hoàn thiện</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- course item -->
+                                <div class="col-lg-4 col-md-6 col-sm-12 d-flex flex-column course-item ">
+                                    <div class="course-element br-10 d-flex flex-column ">
+                                        <div class="courses-thumb ">
+                                            <a href="# " class="courses-link ">
+                                                <img src="./img/thumb.webp " class="w-100 " alt="thumb ">
+
+                                            </a>
+                                        </div>
+                                        <div class="courses-details d-flex flex-column ">
+                                            <a href="# " class="courses-link ">
+                                                <div class="courses-details-header pb-2r ">CHUYỂN ĐỔI SỐ CẤP XÃ</div>
+                                            </a>
+                                            <div class="courses-details-content d-flex flex-column ">
+                                                <div class="details-courses-progress w-100">
+                                                    <div class="progress-count-range h-100" data-progress="76"></div>
+                                                </div>
+                                                <div class="details-courses-rate pt-2r d-flex justify-content-between align-items-center">
+                                                    <div class="finish-count"><span class="number">76%</span> Hoàn thành</div>
+                                                </div>
+                                                <div class="courses-less row no-gutters pt-2r align-items-center justify-content-between pb-2r ">
+                                                    <div class="total-less d-flex align-items-center col-sm-6 ">
+                                                        <div class="less-icon ">
+                                                            <img src="./img/book.svg " alt=" ">
+                                                        </div>
+                                                        <div class="less-count ml-2 ">43 bài học</div>
+                                                    </div>
+                                                    <div class="count-learning d-flex align-items-center col-sm-6 ">
+                                                        <div class="less-icon ">
+                                                            <img src="./img/group.svg " alt=" ">
+                                                        </div>
+                                                        <div class="less-count ml-2 ">1000 học viên</div>
+                                                    </div>
+                                                </div>
+                                                <div class="courses-overview row no-gutters align-items-center justify-content-between ">
+                                                    <div class="courses-rating-star col-12 col-lg-6 col-md-6 ">
+                                                        <div class="courses-rate d-inline-block ">
+                                                            <div class="courses-rating " style="width: 100% "></div>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="join-courses col-12 col-lg-6 col-md-6 text-center ">
+                                                        <a href="# " class="br-10 course-link-btn ">Hoàn thiện</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- course item -->
+                                <div class="col-lg-4 col-md-6 col-sm-12 d-flex flex-column course-item ">
+                                    <div class="course-element br-10 d-flex flex-column ">
+                                        <div class="courses-thumb ">
+                                            <a href="# " class="courses-link ">
+                                                <img src="./img/thumb.webp " class="w-100 " alt="thumb ">
+
+                                            </a>
+                                        </div>
+                                        <div class="courses-details d-flex flex-column ">
+                                            <a href="# " class="courses-link ">
+                                                <div class="courses-details-header pb-2r ">CHUYỂN ĐỔI SỐ CẤP XÃ</div>
+                                            </a>
+                                            <div class="courses-details-content d-flex flex-column ">
+                                                <div class="details-courses-progress w-100">
+                                                    <div class="progress-count-range h-100" data-progress="76"></div>
+                                                </div>
+                                                <div class="details-courses-rate pt-2r d-flex justify-content-between align-items-center">
+                                                    <div class="finish-count"><span class="number">76%</span> Hoàn thành</div>
+                                                </div>
+                                                <div class="courses-less row no-gutters pt-2r align-items-center justify-content-between pb-2r ">
+                                                    <div class="total-less d-flex align-items-center col-sm-6 ">
+                                                        <div class="less-icon ">
+                                                            <img src="./img/book.svg " alt=" ">
+                                                        </div>
+                                                        <div class="less-count ml-2 ">43 bài học</div>
+                                                    </div>
+                                                    <div class="count-learning d-flex align-items-center col-sm-6 ">
+                                                        <div class="less-icon ">
+                                                            <img src="./img/group.svg " alt=" ">
+                                                        </div>
+                                                        <div class="less-count ml-2 ">1000 học viên</div>
+                                                    </div>
+                                                </div>
+                                                <div class="courses-overview row no-gutters align-items-center justify-content-between ">
+                                                    <div class="courses-rating-star col-12 col-lg-6 col-md-6 ">
+                                                        <div class="courses-rate d-inline-block ">
+                                                            <div class="courses-rating " style="width: 100% "></div>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="join-courses col-12 col-lg-6 col-md-6 text-center ">
+                                                        <a href="# " class="br-10 course-link-btn ">Hoàn thiện</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- course item -->
+                                <div class="col-lg-4 col-md-6 col-sm-12 d-flex flex-column course-item ">
+                                    <div class="course-element br-10 d-flex flex-column ">
+                                        <div class="courses-thumb ">
+                                            <a href="# " class="courses-link ">
+                                                <img src="./img/thumb.webp " class="w-100 " alt="thumb ">
+
+                                            </a>
+                                        </div>
+                                        <div class="courses-details d-flex flex-column ">
+                                            <a href="# " class="courses-link ">
+                                                <div class="courses-details-header pb-2r ">CHUYỂN ĐỔI SỐ CẤP XÃ</div>
+                                            </a>
+                                            <div class="courses-details-content d-flex flex-column ">
+                                                <div class="details-courses-progress w-100">
+                                                    <div class="progress-count-range h-100" data-progress="76"></div>
+                                                </div>
+                                                <div class="details-courses-rate pt-2r d-flex justify-content-between align-items-center">
+                                                    <div class="finish-count"><span class="number">76%</span> Hoàn thành</div>
+                                                </div>
+                                                <div class="courses-less row no-gutters pt-2r align-items-center justify-content-between pb-2r ">
+                                                    <div class="total-less d-flex align-items-center col-sm-6 ">
+                                                        <div class="less-icon ">
+                                                            <img src="./img/book.svg " alt=" ">
+                                                        </div>
+                                                        <div class="less-count ml-2 ">43 bài học</div>
+                                                    </div>
+                                                    <div class="count-learning d-flex align-items-center col-sm-6 ">
+                                                        <div class="less-icon ">
+                                                            <img src="./img/group.svg " alt=" ">
+                                                        </div>
+                                                        <div class="less-count ml-2 ">1000 học viên</div>
+                                                    </div>
+                                                </div>
+                                                <div class="courses-overview row no-gutters align-items-center justify-content-between ">
+                                                    <div class="courses-rating-star col-12 col-lg-6 col-md-6 ">
+                                                        <div class="courses-rate d-inline-block ">
+                                                            <div class="courses-rating " style="width: 100% "></div>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="join-courses col-12 col-lg-6 col-md-6 text-center ">
+                                                        <a href="# " class="br-10 course-link-btn ">Hoàn thiện</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- course item -->
+                                <div class="col-lg-4 col-md-6 col-sm-12 d-flex flex-column course-item ">
+                                    <div class="course-element br-10 d-flex flex-column ">
+                                        <div class="courses-thumb ">
+                                            <a href="# " class="courses-link ">
+                                                <img src="./img/thumb.webp " class="w-100 " alt="thumb ">
+
+                                            </a>
+                                        </div>
+                                        <div class="courses-details d-flex flex-column ">
+                                            <a href="# " class="courses-link ">
+                                                <div class="courses-details-header pb-2r ">CHUYỂN ĐỔI SỐ CẤP XÃ</div>
+                                            </a>
+                                            <div class="courses-details-content d-flex flex-column ">
+                                                <div class="details-courses-progress w-100">
+                                                    <div class="progress-count-range h-100" data-progress="76"></div>
+                                                </div>
+                                                <div class="details-courses-rate pt-2r d-flex justify-content-between align-items-center">
+                                                    <div class="finish-count"><span class="number">76%</span> Hoàn thành</div>
+                                                </div>
+                                                <div class="courses-less row no-gutters pt-2r align-items-center justify-content-between pb-2r ">
+                                                    <div class="total-less d-flex align-items-center col-sm-6 ">
+                                                        <div class="less-icon ">
+                                                            <img src="./img/book.svg " alt=" ">
+                                                        </div>
+                                                        <div class="less-count ml-2 ">43 bài học</div>
+                                                    </div>
+                                                    <div class="count-learning d-flex align-items-center col-sm-6 ">
+                                                        <div class="less-icon ">
+                                                            <img src="./img/group.svg " alt=" ">
+                                                        </div>
+                                                        <div class="less-count ml-2 ">1000 học viên</div>
+                                                    </div>
+                                                </div>
+                                                <div class="courses-overview row no-gutters align-items-center justify-content-between ">
+                                                    <div class="courses-rating-star col-12 col-lg-6 col-md-6 ">
+                                                        <div class="courses-rate d-inline-block ">
+                                                            <div class="courses-rating " style="width: 100% "></div>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="join-courses col-12 col-lg-6 col-md-6 text-center ">
+                                                        <a href="# " class="br-10 course-link-btn ">Hoàn thiện</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- course item -->
+                                <div class="col-lg-4 col-md-6 col-sm-12 d-flex flex-column course-item ">
+                                    <div class="course-element br-10 d-flex flex-column ">
+                                        <div class="courses-thumb ">
+                                            <a href="# " class="courses-link ">
+                                                <img src="./img/thumb.webp " class="w-100 " alt="thumb ">
+
+                                            </a>
+                                        </div>
+                                        <div class="courses-details d-flex flex-column ">
+                                            <a href="# " class="courses-link ">
+                                                <div class="courses-details-header pb-2r ">CHUYỂN ĐỔI SỐ CẤP XÃ</div>
+                                            </a>
+                                            <div class="courses-details-content d-flex flex-column ">
+                                                <div class="details-courses-progress w-100">
+                                                    <div class="progress-count-range h-100" data-progress="76"></div>
+                                                </div>
+                                                <div class="details-courses-rate pt-2r d-flex justify-content-between align-items-center">
+                                                    <div class="finish-count"><span class="number">76%</span> Hoàn thành</div>
+                                                </div>
+                                                <div class="courses-less row no-gutters pt-2r align-items-center justify-content-between pb-2r ">
+                                                    <div class="total-less d-flex align-items-center col-sm-6 ">
+                                                        <div class="less-icon ">
+                                                            <img src="./img/book.svg " alt=" ">
+                                                        </div>
+                                                        <div class="less-count ml-2 ">43 bài học</div>
+                                                    </div>
+                                                    <div class="count-learning d-flex align-items-center col-sm-6 ">
+                                                        <div class="less-icon ">
+                                                            <img src="./img/group.svg " alt=" ">
+                                                        </div>
+                                                        <div class="less-count ml-2 ">1000 học viên</div>
+                                                    </div>
+                                                </div>
+                                                <div class="courses-overview row no-gutters align-items-center justify-content-between ">
+                                                    <div class="courses-rating-star col-12 col-lg-6 col-md-6 ">
+                                                        <div class="courses-rate d-inline-block ">
+                                                            <div class="courses-rating " style="width: 100% "></div>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="join-courses col-12 col-lg-6 col-md-6 text-center ">
+                                                        <a href="# " class="br-10 course-link-btn ">Hoàn thiện</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- pagination -->
+                        <div class="row-pagination d-flex align-items-center justify-content-center mt-5r">
+                            <span class="pagination-btn pag-icon-action-prev">
+                            <div class="pag-icon d-flex align-items-center pag-prev">
+                                <svg id="Layer_1" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m502.628 278.627-113.378 113.378c-6.249 6.249-14.438 9.373-22.628 9.373s-16.379-3.124-22.628-9.373c-12.496-12.497-12.496-32.758 0-45.255l58.751-58.75h-370.745c-17.673 0-32-14.327-32-32s14.327-32 32-32h370.745l-58.751-58.75c-12.496-12.497-12.496-32.758 0-45.255 12.498-12.497 32.758-12.497 45.256 0l113.378 113.378c12.496 12.496 12.496 32.758 0 45.254z"/></svg>
+                            </div>
+                        </span>
+                            <span class="pagination-btn pag-number active">1</span>
+                            <span class="pagination-btn pag-number">2</span>
+                            <span class="pagination-btn pag-number">...</span>
+                            <span class="pagination-btn pag-number">20</span>
+                            <span class="pagination-btn pag-icon-action-next">
+                            <div class="pag-icon d-flex align-items-center pag-next">
+                                <svg id="Layer_1" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m502.628 278.627-113.378 113.378c-6.249 6.249-14.438 9.373-22.628 9.373s-16.379-3.124-22.628-9.373c-12.496-12.497-12.496-32.758 0-45.255l58.751-58.75h-370.745c-17.673 0-32-14.327-32-32s14.327-32 32-32h370.745l-58.751-58.75c-12.496-12.497-12.496-32.758 0-45.255 12.498-12.497 32.758-12.497 45.256 0l113.378 113.378c12.496 12.496 12.496 32.758 0 45.254z"/></svg>
+                            </div>
+                        </span>
+                        </div>
+                    </div>
+                    <!-- tab 3 -->
+                    <div class="tab-pane fade my-quizzes" role="tabpanel" id="quizzes">
+                        <!-- suggest course -->
+                        <div class="suggest-courses">
+                            <!-- header -->
+                            <div class="suggest-courses-header">
+                                <div class="suggest-courses-header-heading pb-2r header-sub">CÂU HỎI DÀNH CHO TÔI</div>
+                                <div class="suggest-courses-action d-lg-flex d-block justify-content-between align-items-center">
+                                    <div class="suggest-courses-action-filter d-flex align-items-center">
+                                        <span class="pr-1-5">Lọc bởi</span>
+                                        <span class="select d-flex py-1 justify-content-between"><span class="text-select">Tất cả danh mục</span>
+                                        <div class="arrow-icon ml-3">
+                                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="123.959px" height="123.958px" viewBox="0 0 123.959 123.958" style="enable-background:new 0 0 123.959 123.958;" xml:space="preserve"> <g> <path d="M117.979,28.017h-112c-5.3,0-8,6.4-4.2,10.2l56,56c2.3,2.3,6.1,2.3,8.401,0l56-56 C125.979,34.417,123.279,28.017,117.979,28.017z"/> </g></svg>
+                                        </div>
+                                        <!-- options select -->
+                                        <div class="menu-filter w-100 mt-2r">
+                                            <div class="filter-item">Tất cả danh mục</div>
+                                            <div class="filter-item">1</div>
+                                            <div class="filter-item">2</div>
+                                            <div class="filter-item">3</div>
+                                            <div class="filter-item">4</div>
+                                        </div>
+                                        </span>
+                                    </div>
+                                    <form action="" class="suggest-courses-action-search">
+                                        <input type="text" required placeholder="Tìm kiếm" class="filter-search w-100">
+                                        <div class="icon-search">
+                                            <svg viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M36.9513 37.6879L24.9009 25.1727M28.6521 16.11C28.6521 19.5117 27.3008 22.774 24.8954 25.1794C22.4901 27.5847 19.2277 28.936 15.8261 28.936C12.4244 28.936 9.16202 27.5847 6.75666 25.1794C4.35131 22.774 3 19.5117 3 16.11C3 12.7083 4.35131 9.44595 6.75666 7.0406C9.16202 4.63525 12.4244 3.28394 15.8261 3.28394C19.2277 3.28394 22.4901 4.63525 24.8954 7.0406C27.3008 9.44595 28.6521 12.7083 28.6521 16.11Z" stroke="black" stroke-width="5" stroke-linecap="round"/>
+                                                </svg>
+
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- courses -->
+                            <div class="row courses-row gap-3 mt-5r">
+                                <!-- course item -->
+                                <div class="col-lg-4 col-md-6 col-sm-12 d-flex flex-column course-item ">
+                                    <div class="course-element br-10 d-flex flex-column ">
+                                        <div class="courses-thumb ">
+                                            <a href="# " class="courses-link ">
+                                                <img src="./img/Quizzes.webp" class="w-100 " alt="thumb ">
+                                                <div class="courses-tag br-10 ">Trắc nghiệm</div>
+                                            </a>
+                                        </div>
+                                        <div class="courses-details d-flex flex-column ">
+                                            <a href="# " class="courses-link ">
+                                                <div class="courses-details-header pb-2r ">NHỮNG CÂU HỎI VỀ CHUYỂN ĐỔI SỐ</div>
+                                            </a>
+                                            <div class="courses-details-content d-flex flex-column ">
+
+                                                <div class="courses-less row no-gutters pt-2r align-items-center justify-content-between pb-2r ">
+                                                    <div class="total-less d-flex align-items-center col-sm-6 ">
+                                                        <div class="less-icon ">
+                                                            <img src="./img/book.svg " alt=" ">
+                                                        </div>
+                                                        <div class="less-count ml-2 ">43 bài học</div>
+                                                    </div>
+                                                    <div class="count-learning d-flex align-items-center col-sm-6 ">
+                                                        <div class="less-icon ">
+                                                            <img src="./img/group.svg " alt=" ">
+                                                        </div>
+                                                        <div class="less-count ml-2 ">1000 học viên</div>
+                                                    </div>
+                                                </div>
+                                                <div class="courses-overview row no-gutters align-items-center justify-content-between ">
+                                                    <div class="courses-rating-star col-12 col-lg-6 col-md-6 ">
+                                                        <div class="courses-rate d-inline-block ">
+                                                            <div class="courses-rating " style="width: 100% "></div>
+                                                        </div>
+                                                        <div class="courses-rating-count ">
+                                                            4.87 (3.8k+ học viên)
+                                                        </div>
+                                                    </div>
+                                                    <div class="join-courses col-12 col-lg-6 col-md-6 text-center ">
+                                                        <a href="# " class="br-10 course-link-btn ">Giải đố</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- course item -->
+                                <div class="col-lg-4 col-md-6 col-sm-12 d-flex flex-column course-item ">
+                                    <div class="course-element br-10 d-flex flex-column ">
+                                        <div class="courses-thumb ">
+                                            <a href="# " class="courses-link ">
+                                                <img src="./img/Quizzes.webp" class="w-100 " alt="thumb ">
+                                                <div class="courses-tag br-10 ">Trắc nghiệm</div>
+                                            </a>
+                                        </div>
+                                        <div class="courses-details d-flex flex-column ">
+                                            <a href="# " class="courses-link ">
+                                                <div class="courses-details-header pb-2r ">NHỮNG CÂU HỎI VỀ CHUYỂN ĐỔI SỐ</div>
+                                            </a>
+                                            <div class="courses-details-content d-flex flex-column ">
+
+                                                <div class="courses-less row no-gutters pt-2r align-items-center justify-content-between pb-2r ">
+                                                    <div class="total-less d-flex align-items-center col-sm-6 ">
+                                                        <div class="less-icon ">
+                                                            <img src="./img/book.svg " alt=" ">
+                                                        </div>
+                                                        <div class="less-count ml-2 ">43 bài học</div>
+                                                    </div>
+                                                    <div class="count-learning d-flex align-items-center col-sm-6 ">
+                                                        <div class="less-icon ">
+                                                            <img src="./img/group.svg " alt=" ">
+                                                        </div>
+                                                        <div class="less-count ml-2 ">1000 học viên</div>
+                                                    </div>
+                                                </div>
+                                                <div class="courses-overview row no-gutters align-items-center justify-content-between ">
+                                                    <div class="courses-rating-star col-12 col-lg-6 col-md-6 ">
+                                                        <div class="courses-rate d-inline-block ">
+                                                            <div class="courses-rating " style="width: 100% "></div>
+                                                        </div>
+                                                        <div class="courses-rating-count ">
+                                                            4.87 (3.8k+ học viên)
+                                                        </div>
+                                                    </div>
+                                                    <div class="join-courses col-12 col-lg-6 col-md-6 text-center ">
+                                                        <a href="# " class="br-10 course-link-btn ">Giải đố</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- course item -->
+                                <div class="col-lg-4 col-md-6 col-sm-12 d-flex flex-column course-item ">
+                                    <div class="course-element br-10 d-flex flex-column ">
+                                        <div class="courses-thumb ">
+                                            <a href="# " class="courses-link ">
+                                                <img src="./img/Quizzes.webp" class="w-100 " alt="thumb ">
+                                                <div class="courses-tag br-10 ">Trắc nghiệm</div>
+                                            </a>
+                                        </div>
+                                        <div class="courses-details d-flex flex-column ">
+                                            <a href="# " class="courses-link ">
+                                                <div class="courses-details-header pb-2r ">NHỮNG CÂU HỎI VỀ CHUYỂN ĐỔI SỐ</div>
+                                            </a>
+                                            <div class="courses-details-content d-flex flex-column ">
+
+                                                <div class="courses-less row no-gutters pt-2r align-items-center justify-content-between pb-2r ">
+                                                    <div class="total-less d-flex align-items-center col-sm-6 ">
+                                                        <div class="less-icon ">
+                                                            <img src="./img/book.svg " alt=" ">
+                                                        </div>
+                                                        <div class="less-count ml-2 ">43 bài học</div>
+                                                    </div>
+                                                    <div class="count-learning d-flex align-items-center col-sm-6 ">
+                                                        <div class="less-icon ">
+                                                            <img src="./img/group.svg " alt=" ">
+                                                        </div>
+                                                        <div class="less-count ml-2 ">1000 học viên</div>
+                                                    </div>
+                                                </div>
+                                                <div class="courses-overview row no-gutters align-items-center justify-content-between ">
+                                                    <div class="courses-rating-star col-12 col-lg-6 col-md-6 ">
+                                                        <div class="courses-rate d-inline-block ">
+                                                            <div class="courses-rating " style="width: 100% "></div>
+                                                        </div>
+                                                        <div class="courses-rating-count ">
+                                                            4.87 (3.8k+ học viên)
+                                                        </div>
+                                                    </div>
+                                                    <div class="join-courses col-12 col-lg-6 col-md-6 text-center ">
+                                                        <a href="# " class="br-10 course-link-btn ">Giải đố</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- course item -->
+                                <div class="col-lg-4 col-md-6 col-sm-12 d-flex flex-column course-item ">
+                                    <div class="course-element br-10 d-flex flex-column ">
+                                        <div class="courses-thumb ">
+                                            <a href="# " class="courses-link ">
+                                                <img src="./img/Quizzes.webp" class="w-100 " alt="thumb ">
+                                                <div class="courses-tag br-10 ">Trắc nghiệm</div>
+                                            </a>
+                                        </div>
+                                        <div class="courses-details d-flex flex-column ">
+                                            <a href="# " class="courses-link ">
+                                                <div class="courses-details-header pb-2r ">NHỮNG CÂU HỎI VỀ CHUYỂN ĐỔI SỐ</div>
+                                            </a>
+                                            <div class="courses-details-content d-flex flex-column ">
+
+                                                <div class="courses-less row no-gutters pt-2r align-items-center justify-content-between pb-2r ">
+                                                    <div class="total-less d-flex align-items-center col-sm-6 ">
+                                                        <div class="less-icon ">
+                                                            <img src="./img/book.svg " alt=" ">
+                                                        </div>
+                                                        <div class="less-count ml-2 ">43 bài học</div>
+                                                    </div>
+                                                    <div class="count-learning d-flex align-items-center col-sm-6 ">
+                                                        <div class="less-icon ">
+                                                            <img src="./img/group.svg " alt=" ">
+                                                        </div>
+                                                        <div class="less-count ml-2 ">1000 học viên</div>
+                                                    </div>
+                                                </div>
+                                                <div class="courses-overview row no-gutters align-items-center justify-content-between ">
+                                                    <div class="courses-rating-star col-12 col-lg-6 col-md-6 ">
+                                                        <div class="courses-rate d-inline-block ">
+                                                            <div class="courses-rating " style="width: 100% "></div>
+                                                        </div>
+                                                        <div class="courses-rating-count ">
+                                                            4.87 (3.8k+ học viên)
+                                                        </div>
+                                                    </div>
+                                                    <div class="join-courses col-12 col-lg-6 col-md-6 text-center ">
+                                                        <a href="# " class="br-10 course-link-btn ">Giải đố</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- pagination -->
+                        <div class="row-pagination d-flex align-items-center justify-content-center mt-5r">
+                            <span class="pagination-btn pag-icon-action-prev">
+                            <div class="pag-icon d-flex align-items-center pag-prev">
+                                <svg id="Layer_1" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m502.628 278.627-113.378 113.378c-6.249 6.249-14.438 9.373-22.628 9.373s-16.379-3.124-22.628-9.373c-12.496-12.497-12.496-32.758 0-45.255l58.751-58.75h-370.745c-17.673 0-32-14.327-32-32s14.327-32 32-32h370.745l-58.751-58.75c-12.496-12.497-12.496-32.758 0-45.255 12.498-12.497 32.758-12.497 45.256 0l113.378 113.378c12.496 12.496 12.496 32.758 0 45.254z"/></svg>
+                            </div>
+                        </span>
+                            <span class="pagination-btn pag-number active">1</span>
+                            <span class="pagination-btn pag-number">2</span>
+                            <span class="pagination-btn pag-number">...</span>
+                            <span class="pagination-btn pag-number">20</span>
+                            <span class="pagination-btn pag-icon-action-next">
+                            <div class="pag-icon d-flex align-items-center pag-next">
+                                <svg id="Layer_1" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m502.628 278.627-113.378 113.378c-6.249 6.249-14.438 9.373-22.628 9.373s-16.379-3.124-22.628-9.373c-12.496-12.497-12.496-32.758 0-45.255l58.751-58.75h-370.745c-17.673 0-32-14.327-32-32s14.327-32 32-32h370.745l-58.751-58.75c-12.496-12.497-12.496-32.758 0-45.255 12.498-12.497 32.758-12.497 45.256 0l113.378 113.378c12.496 12.496 12.496 32.758 0 45.254z"/></svg>
+                            </div>
+                        </span>
+                        </div>
+                    </div>
+                    <!-- tab 4 -->
+                    <div class="tab-pane fade my-info" role="tabpanel" id="information">
+                        <div class="row no-gutters gap-3">
+                            <div class="col-lg-4 col-md-12 col-sm-12 col-avt mb-4r">
+                                <div class="row gap-3 no-gutters justify-content-between align-items-center">
+                                    <div class="user-avt col-9 col-lg-8 col-md-4">
+                                        <img src="./img/avt2.webp" class="w-100" alt="">
+                                        <div class="change-avt">
+                                            <svg viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g filter="url(#filter0_d_228_509)">
+                                            <circle cx="29" cy="25" r="25" fill="#284D9C"/>
+                                            <circle cx="29" cy="25" r="22.5" stroke="white" stroke-width="5"/>
+                                            </g>
+                                            <path d="M30.4737 14.9737C30.4737 14.4502 30.2657 13.9482 29.8956 13.5781C29.5255 13.2079 29.0235 13 28.5 13C27.9765 13 27.4745 13.2079 27.1044 13.5781C26.7343 13.9482 26.5263 14.4502 26.5263 14.9737V23.5263H17.9737C17.4502 23.5263 16.9482 23.7343 16.5781 24.1044C16.2079 24.4745 16 24.9765 16 25.5C16 26.0235 16.2079 26.5255 16.5781 26.8956C16.9482 27.2657 17.4502 27.4737 17.9737 27.4737H26.5263V36.0263C26.5263 36.5498 26.7343 37.0518 27.1044 37.4219C27.4745 37.7921 27.9765 38 28.5 38C29.0235 38 29.5255 37.7921 29.8956 37.4219C30.2657 37.0518 30.4737 36.5498 30.4737 36.0263V27.4737H39.0263C39.5498 27.4737 40.0518 27.2657 40.4219 26.8956C40.7921 26.5255 41 26.0235 41 25.5C41 24.9765 40.7921 24.4745 40.4219 24.1044C40.0518 23.7343 39.5498 23.5263 39.0263 23.5263H30.4737V14.9737Z" fill="white"/>
+                                            <defs>
+                                            <filter id="filter0_d_228_509" x="0" y="0" width="58" height="58" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                            <feOffset dy="4"/>
+                                            <feGaussianBlur stdDeviation="2"/>
+                                            <feComposite in2="hardAlpha" operator="out"/>
+                                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_228_509"/>
+                                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_228_509" result="shape"/>
+                                            </filter>
+                                            </defs>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="user-social-accounts pt-4r col-12 col-lg-12 col-md-7">
+                                        <!-- link -->
+                                        <div class="user-social-accounts-heading">Liên kết mạng xã hội</div>
+                                        <div class="user-social-accounts-item mt-5r">
+                                            <a href="#" target="_blank" class="social-link d-lg-inline-block d-block text-center">www.twitter.com/<span>demo</span></a>
+                                            <img src="./img/twt.webp" class="img-social" alt="">
+                                        </div>
+                                        <div class="user-social-accounts-item mt-5r">
+                                            <a href="#" target="_blank" class="social-link d-lg-inline-block d-block text-center">www.facebook.com/<span>demo</span></a>
+                                            <img src="./img/facebook.webp" class="img-social" alt="">
+                                        </div>
+                                        <div class="user-social-accounts-item mt-5r">
+                                            <a href="#" target="_blank" class="social-link d-lg-inline-block d-block text-center">www.linkedin.com/<span>demo</span></a>
+                                            <img src="./img/in.webp" class="img-social" alt="">
+                                        </div>
+                                        <div class="user-social-accounts-item mt-5r">
+                                            <a href="#" target="_blank" class="social-link d-lg-inline-block d-block text-center">www.youtube.com/<span>demo</span></a>
+                                            <img src="./img/youtube.webp" class="img-social" alt="">
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-md-12 col-sm-12 col-info">
+                                <div class="user-account-info">
+                                    <div class="suggest-courses-header-heading pb-2r header-sub text-center mb-4r">THÔNG TIN CÁ NHÂN</div>
+                                    <form action="" class="form-info">
+                                        <div class="row gap-3">
+                                            <div class="col-12 col-lg-6 col-md-6">
+                                                <div class="input-box">
+                                                    <div class="input-box-label">Họ và tên</div>
+                                                    <input type="text" required class="input-box-field mt-2r w-100" placeholder="Nhập vào...">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-6 col-md-6">
+                                                <div class="input-box">
+                                                    <div class="input-box-label">Tiêu đề nghề nghiệp (Học viên)</div>
+                                                    <input type="text" required class="input-box-field mt-2r w-100" placeholder="Nhập vào...">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-6 col-md-6">
+                                                <div class="input-box">
+                                                    <div class="input-box-label">Số điện thoại</div>
+                                                    <input type="text" required class="input-box-field mt-2r w-100" placeholder="Nhập vào...">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-6 col-md-6">
+                                                <div class="input-box">
+                                                    <div class="input-box-label">Email</div>
+                                                    <input type="text" required class="input-box-field mt-2r w-100" placeholder="Nhập vào...">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-6 col-md-6">
+                                                <div class="input-box">
+                                                    <div class="input-box-label">Ngôn ngữ</div>
+                                                    <select class="custom-select mt-2r">
+                                                        <option value="" disabled selected>Chọn giá trị</option>
+                                                        <option value="1">One</option>
+                                                      </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-6 col-md-6">
+                                                <div class="input-box">
+                                                    <div class="input-box-label">Giới tính</div>
+                                                    <select class="custom-select mt-2r">
+                                                        <option value="" disabled selected>Chọn giá trị</option>
+                                                        <option value="1">One</option>
+                                                      </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-6 col-md-6">
+                                                <div class="input-box">
+                                                    <div class="input-box-label">Quốc gia</div>
+                                                    <select class="custom-select mt-2r">
+                                                        <option value="" disabled selected>Chọn giá trị</option>
+                                                        <option value="1">One</option>
+                                                      </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-6 col-md-6">
+                                                <div class="input-box">
+                                                    <div class="input-box-label">Thành phố</div>
+                                                    <select class="custom-select mt-2r">
+                                                        <option value="" disabled selected>Chọn giá trị</option>
+                                                        <option value="1">One</option>
+                                                      </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-6 col-md-6">
+                                                <div class="input-box">
+                                                    <div class="input-box-label">Địa chỉ</div>
+                                                    <select class="custom-select mt-2r">
+                                                        <option value="" disabled selected>Chọn giá trị</option>
+                                                        <option value="1">One</option>
+                                                      </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-6 col-md-6">
+                                                <div class="input-box">
+                                                    <div class="input-box-label">Mã Zip</div>
+                                                    <input type="text" required class="input-box-field mt-2r w-100" placeholder="Nhập vào...">
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="input-heaing">Giới thiệu</div>
+                                                <div class="rich-text-editor mt-2r">
+                                                    <div class="summernote">
+                                                        <p>Nhập vào...</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- tab 5 -->
+                    <div class="tab-pane fade account-setting pb-2r" role="tabpanel" id="accountsetting">
+                        <!-- form setting -->
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-lg-9 col-md-12 col-sm-12 ">
+                                <form action="" class="form-setting br-20">
+                                    <div class="suggest-courses-header-heading pb-2r header-sub text-center">THAY ĐỔI MẬT KHẨU</div>
+                                    <div class="input-box mt-5r">
+                                        <div class="input-box-label">Nhập mật khẩu cũ</div>
+                                        <input type="text" required class="input-box-field mt-2r w-100" placeholder="Nhập vào...">
+                                    </div>
+                                    <div class="input-box mt-5r">
+                                        <div class="input-box-label">Nhập mật khẩu mới</div>
+                                        <input type="text" required class="input-box-field mt-2r w-100" placeholder="Nhập vào...">
+                                    </div>
+                                    <div class="input-box mt-5r">
+                                        <div class="input-box-label">Nhập lại mật khẩu mới</div>
+                                        <input type="text" required class="input-box-field mt-2r w-100" placeholder="Nhập vào...">
+                                    </div>
+                                    <div class="text-center mt-5r">
+                                        <button type=" submit " class="btn-submit btn-all">Thay đổi</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- tab 6 -->
+                    <div class="tab-pane fade device " role="tabpanel" id="devicelogin">
+                        <!-- device login -->
+                        <div class="device-login">
+                            <!-- header -->
+                            <div class="suggest-courses-header-heading pb-2r header-sub">CÁC THIẾT BỊ ĐANG ĐĂNG NHẬP</div>
+
+                            <!-- table login -->
+                            <table class="table table-striped text-center mt-2r">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">STT</th>
+                                        <th scope="col">Thời gian</th>
+                                        <th scope="col">Hệ điều hành</th>
+                                        <th scope="col">Trình duyệt</th>
+                                        <th scope="col">Trạng thái</th>
+                                        <th scope="col">Thao tác</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>19/03/2022</td>
+                                        <td>Window 10</td>
+                                        <td>Chrome</td>
+                                        <td>Kích hoạt</td>
+                                        <td>
+                                            <a href="#" class="log-out br-10 d-lg-inline-block d-none">Đăng xuất</a>
+                                            <a href="#" class="icon-logout d-block d-lg-none">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+                                                <g id="Layer_35">
+                                                    <path d="M29.5,5v22c0,1.654-1.346,3-3,3H13c-1.654,0-3-1.346-3-3v-7c-0.016-1.3,2.017-1.296,2,0v7c0,0.552,0.448,1,1,1h13.5   c0.552,0,1-0.448,1-1V5c0-0.552-0.448-1-1-1H13c-0.552,0-1,0.448-1,1v7c0.023,1.3-2.022,1.296-2,0V5c0-1.654,1.346-3,3-3h13.5   C28.154,2,29.5,3.346,29.5,5z M6.13,17H18.5c0.553,0,1-0.447,1-1c0-0.553-0.447-1-1-1H6.13l2.534-2.253   c0.982-0.844-0.372-2.375-1.328-1.494l-4.5,4c-0.436,0.401-0.437,1.093,0,1.494C3.2,16.948,7.58,21.295,8,21   c0.881,0.031,1.359-1.174,0.664-1.747L6.13,17z"
+                                                    /> </g>
+                                                </svg>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>19/03/2022</td>
+                                        <td>Window 10</td>
+                                        <td>Chrome</td>
+                                        <td>Kích hoạt</td>
+                                        <td>
+                                            <a href="#" class="log-out br-10 d-lg-inline-block d-none">Đăng xuất</a>
+                                            <a href="#" class="icon-logout d-block d-lg-none">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+                                                <g id="Layer_35">
+                                                    <path d="M29.5,5v22c0,1.654-1.346,3-3,3H13c-1.654,0-3-1.346-3-3v-7c-0.016-1.3,2.017-1.296,2,0v7c0,0.552,0.448,1,1,1h13.5   c0.552,0,1-0.448,1-1V5c0-0.552-0.448-1-1-1H13c-0.552,0-1,0.448-1,1v7c0.023,1.3-2.022,1.296-2,0V5c0-1.654,1.346-3,3-3h13.5   C28.154,2,29.5,3.346,29.5,5z M6.13,17H18.5c0.553,0,1-0.447,1-1c0-0.553-0.447-1-1-1H6.13l2.534-2.253   c0.982-0.844-0.372-2.375-1.328-1.494l-4.5,4c-0.436,0.401-0.437,1.093,0,1.494C3.2,16.948,7.58,21.295,8,21   c0.881,0.031,1.359-1.174,0.664-1.747L6.13,17z"
+                                                    /> </g>
+                                                </svg>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>19/03/2022</td>
+                                        <td>Window 10</td>
+                                        <td>Chrome</td>
+                                        <td>Kích hoạt</td>
+                                        <td>
+                                            <a href="#" class="log-out br-10 d-lg-inline-block d-none">Đăng xuất</a>
+                                            <a href="#" class="icon-logout d-block d-lg-none">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+                                                <g id="Layer_35">
+                                                    <path d="M29.5,5v22c0,1.654-1.346,3-3,3H13c-1.654,0-3-1.346-3-3v-7c-0.016-1.3,2.017-1.296,2,0v7c0,0.552,0.448,1,1,1h13.5   c0.552,0,1-0.448,1-1V5c0-0.552-0.448-1-1-1H13c-0.552,0-1,0.448-1,1v7c0.023,1.3-2.022,1.296-2,0V5c0-1.654,1.346-3,3-3h13.5   C28.154,2,29.5,3.346,29.5,5z M6.13,17H18.5c0.553,0,1-0.447,1-1c0-0.553-0.447-1-1-1H6.13l2.534-2.253   c0.982-0.844-0.372-2.375-1.328-1.494l-4.5,4c-0.436,0.401-0.437,1.093,0,1.494C3.2,16.948,7.58,21.295,8,21   c0.881,0.031,1.359-1.174,0.664-1.747L6.13,17z"
+                                                    /> </g>
+                                                </svg>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>19/03/2022</td>
+                                        <td>Window 10</td>
+                                        <td>Chrome</td>
+                                        <td>Kích hoạt</td>
+                                        <td>
+                                            <a href="#" class="log-out br-10 d-lg-inline-block d-none">Đăng xuất</a>
+                                            <a href="#" class="icon-logout d-block d-lg-none">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+                                                <g id="Layer_35">
+                                                    <path d="M29.5,5v22c0,1.654-1.346,3-3,3H13c-1.654,0-3-1.346-3-3v-7c-0.016-1.3,2.017-1.296,2,0v7c0,0.552,0.448,1,1,1h13.5   c0.552,0,1-0.448,1-1V5c0-0.552-0.448-1-1-1H13c-0.552,0-1,0.448-1,1v7c0.023,1.3-2.022,1.296-2,0V5c0-1.654,1.346-3,3-3h13.5   C28.154,2,29.5,3.346,29.5,5z M6.13,17H18.5c0.553,0,1-0.447,1-1c0-0.553-0.447-1-1-1H6.13l2.534-2.253   c0.982-0.844-0.372-2.375-1.328-1.494l-4.5,4c-0.436,0.401-0.437,1.093,0,1.494C3.2,16.948,7.58,21.295,8,21   c0.881,0.031,1.359-1.174,0.664-1.747L6.13,17z"
+                                                    /> </g>
+                                                </svg>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        <td>19/03/2022</td>
+                                        <td>Window 10</td>
+                                        <td>Chrome</td>
+                                        <td>Kích hoạt</td>
+                                        <td>
+                                            <a href="#" class="log-out br-10 d-lg-inline-block d-none">Đăng xuất</a>
+                                            <a href="#" class="icon-logout d-block d-lg-none">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+                                                <g id="Layer_35">
+                                                    <path d="M29.5,5v22c0,1.654-1.346,3-3,3H13c-1.654,0-3-1.346-3-3v-7c-0.016-1.3,2.017-1.296,2,0v7c0,0.552,0.448,1,1,1h13.5   c0.552,0,1-0.448,1-1V5c0-0.552-0.448-1-1-1H13c-0.552,0-1,0.448-1,1v7c0.023,1.3-2.022,1.296-2,0V5c0-1.654,1.346-3,3-3h13.5   C28.154,2,29.5,3.346,29.5,5z M6.13,17H18.5c0.553,0,1-0.447,1-1c0-0.553-0.447-1-1-1H6.13l2.534-2.253   c0.982-0.844-0.372-2.375-1.328-1.494l-4.5,4c-0.436,0.401-0.437,1.093,0,1.494C3.2,16.948,7.58,21.295,8,21   c0.881,0.031,1.359-1.174,0.664-1.747L6.13,17z"
+                                                    /> </g>
+                                                </svg>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">6</th>
+                                        <td>19/03/2022</td>
+                                        <td>Window 10</td>
+                                        <td>Chrome</td>
+                                        <td>Kích hoạt</td>
+                                        <td>
+                                            <a href="#" class="log-out br-10 d-lg-inline-block d-none">Đăng xuất</a>
+                                            <a href="#" class="icon-logout d-block d-lg-none">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+                                                <g id="Layer_35">
+                                                    <path d="M29.5,5v22c0,1.654-1.346,3-3,3H13c-1.654,0-3-1.346-3-3v-7c-0.016-1.3,2.017-1.296,2,0v7c0,0.552,0.448,1,1,1h13.5   c0.552,0,1-0.448,1-1V5c0-0.552-0.448-1-1-1H13c-0.552,0-1,0.448-1,1v7c0.023,1.3-2.022,1.296-2,0V5c0-1.654,1.346-3,3-3h13.5   C28.154,2,29.5,3.346,29.5,5z M6.13,17H18.5c0.553,0,1-0.447,1-1c0-0.553-0.447-1-1-1H6.13l2.534-2.253   c0.982-0.844-0.372-2.375-1.328-1.494l-4.5,4c-0.436,0.401-0.437,1.093,0,1.494C3.2,16.948,7.58,21.295,8,21   c0.881,0.031,1.359-1.174,0.664-1.747L6.13,17z"
+                                                    /> </g>
+                                                </svg>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">7</th>
+                                        <td>19/03/2022</td>
+                                        <td>Window 10</td>
+                                        <td>Chrome</td>
+                                        <td>Kích hoạt</td>
+                                        <td>
+                                            <a href="#" class="log-out br-10 d-lg-inline-block d-none">Đăng xuất</a>
+                                            <a href="#" class="icon-logout d-block d-lg-none">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+                                                <g id="Layer_35">
+                                                    <path d="M29.5,5v22c0,1.654-1.346,3-3,3H13c-1.654,0-3-1.346-3-3v-7c-0.016-1.3,2.017-1.296,2,0v7c0,0.552,0.448,1,1,1h13.5   c0.552,0,1-0.448,1-1V5c0-0.552-0.448-1-1-1H13c-0.552,0-1,0.448-1,1v7c0.023,1.3-2.022,1.296-2,0V5c0-1.654,1.346-3,3-3h13.5   C28.154,2,29.5,3.346,29.5,5z M6.13,17H18.5c0.553,0,1-0.447,1-1c0-0.553-0.447-1-1-1H6.13l2.534-2.253   c0.982-0.844-0.372-2.375-1.328-1.494l-4.5,4c-0.436,0.401-0.437,1.093,0,1.494C3.2,16.948,7.58,21.295,8,21   c0.881,0.031,1.359-1.174,0.664-1.747L6.13,17z"
+                                                    /> </g>
+                                                </svg>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">8</th>
+                                        <td>19/03/2022</td>
+                                        <td>Window 10</td>
+                                        <td>Chrome</td>
+                                        <td>Kích hoạt</td>
+                                        <td>
+                                            <a href="#" class="log-out br-10 d-lg-inline-block d-none">Đăng xuất</a>
+                                            <a href="#" class="icon-logout d-block d-lg-none">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+                                                <g id="Layer_35">
+                                                    <path d="M29.5,5v22c0,1.654-1.346,3-3,3H13c-1.654,0-3-1.346-3-3v-7c-0.016-1.3,2.017-1.296,2,0v7c0,0.552,0.448,1,1,1h13.5   c0.552,0,1-0.448,1-1V5c0-0.552-0.448-1-1-1H13c-0.552,0-1,0.448-1,1v7c0.023,1.3-2.022,1.296-2,0V5c0-1.654,1.346-3,3-3h13.5   C28.154,2,29.5,3.346,29.5,5z M6.13,17H18.5c0.553,0,1-0.447,1-1c0-0.553-0.447-1-1-1H6.13l2.534-2.253   c0.982-0.844-0.372-2.375-1.328-1.494l-4.5,4c-0.436,0.401-0.437,1.093,0,1.494C3.2,16.948,7.58,21.295,8,21   c0.881,0.031,1.359-1.174,0.664-1.747L6.13,17z"
+                                                    /> </g>
+                                                </svg>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">9</th>
+                                        <td>19/03/2022</td>
+                                        <td>Window 10</td>
+                                        <td>Chrome</td>
+                                        <td>Kích hoạt</td>
+                                        <td>
+                                            <a href="#" class="log-out br-10 d-lg-inline-block d-none">Đăng xuất</a>
+                                            <a href="#" class="icon-logout d-block d-lg-none">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+                                                <g id="Layer_35">
+                                                    <path d="M29.5,5v22c0,1.654-1.346,3-3,3H13c-1.654,0-3-1.346-3-3v-7c-0.016-1.3,2.017-1.296,2,0v7c0,0.552,0.448,1,1,1h13.5   c0.552,0,1-0.448,1-1V5c0-0.552-0.448-1-1-1H13c-0.552,0-1,0.448-1,1v7c0.023,1.3-2.022,1.296-2,0V5c0-1.654,1.346-3,3-3h13.5   C28.154,2,29.5,3.346,29.5,5z M6.13,17H18.5c0.553,0,1-0.447,1-1c0-0.553-0.447-1-1-1H6.13l2.534-2.253   c0.982-0.844-0.372-2.375-1.328-1.494l-4.5,4c-0.436,0.401-0.437,1.093,0,1.494C3.2,16.948,7.58,21.295,8,21   c0.881,0.031,1.359-1.174,0.664-1.747L6.13,17z"
+                                                    /> </g>
+                                                </svg>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">10</th>
+                                        <td>19/03/2022</td>
+                                        <td>Window 10</td>
+                                        <td>Chrome</td>
+                                        <td>Kích hoạt</td>
+                                        <td>
+                                            <a href="#" class="log-out br-10 d-lg-inline-block d-none">Đăng xuất</a>
+                                            <a href="#" class="icon-logout d-block d-lg-none">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+                                                <g id="Layer_35">
+                                                    <path d="M29.5,5v22c0,1.654-1.346,3-3,3H13c-1.654,0-3-1.346-3-3v-7c-0.016-1.3,2.017-1.296,2,0v7c0,0.552,0.448,1,1,1h13.5   c0.552,0,1-0.448,1-1V5c0-0.552-0.448-1-1-1H13c-0.552,0-1,0.448-1,1v7c0.023,1.3-2.022,1.296-2,0V5c0-1.654,1.346-3,3-3h13.5   C28.154,2,29.5,3.346,29.5,5z M6.13,17H18.5c0.553,0,1-0.447,1-1c0-0.553-0.447-1-1-1H6.13l2.534-2.253   c0.982-0.844-0.372-2.375-1.328-1.494l-4.5,4c-0.436,0.401-0.437,1.093,0,1.494C3.2,16.948,7.58,21.295,8,21   c0.881,0.031,1.359-1.174,0.664-1.747L6.13,17z"
+                                                    /> </g>
+                                                </svg>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- pagination -->
+                        <div class="row-pagination d-flex align-items-center justify-content-center mt-5r">
+                            <span class="pagination-btn pag-icon-action-prev">
+                            <div class="pag-icon d-flex align-items-center pag-prev">
+                                <svg id="Layer_1" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m502.628 278.627-113.378 113.378c-6.249 6.249-14.438 9.373-22.628 9.373s-16.379-3.124-22.628-9.373c-12.496-12.497-12.496-32.758 0-45.255l58.751-58.75h-370.745c-17.673 0-32-14.327-32-32s14.327-32 32-32h370.745l-58.751-58.75c-12.496-12.497-12.496-32.758 0-45.255 12.498-12.497 32.758-12.497 45.256 0l113.378 113.378c12.496 12.496 12.496 32.758 0 45.254z"/></svg>
+                            </div>
+                        </span>
+                            <span class="pagination-btn pag-number active">1</span>
+                            <span class="pagination-btn pag-number">2</span>
+                            <span class="pagination-btn pag-number">...</span>
+                            <span class="pagination-btn pag-number">20</span>
+                            <span class="pagination-btn pag-icon-action-next">
+                            <div class="pag-icon d-flex align-items-center pag-next">
+                                <svg id="Layer_1" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m502.628 278.627-113.378 113.378c-6.249 6.249-14.438 9.373-22.628 9.373s-16.379-3.124-22.628-9.373c-12.496-12.497-12.496-32.758 0-45.255l58.751-58.75h-370.745c-17.673 0-32-14.327-32-32s14.327-32 32-32h370.745l-58.751-58.75c-12.496-12.497-12.496-32.758 0-45.255 12.498-12.497 32.758-12.497 45.256 0l113.378 113.378c12.496 12.496 12.496 32.758 0 45.254z"/></svg>
+                            </div>
+                        </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+    <script src=" ./js/main.js "></script>
+    <script src="./js/bootstrap.bundle.min.js "></script>
+    <script src="./js/popper.min.js "></script>
+    <script>
+        $(document).ready(function() {
+            $('.summernote').summernote();
+        });
+    </script>
+</body>
+
+</html>
