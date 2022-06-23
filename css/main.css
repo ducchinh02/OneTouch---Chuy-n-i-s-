@@ -454,9 +454,33 @@
   position: relative;
   overflow: hidden;
 }
+@media screen and (max-width: 576px) {
+  .header-banner {
+    height: 80vh;
+  }
+  .header-banner .banner-item {
+    background-image: url("../img/Banner.webp");
+    background-position: 80% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .header-banner .banner-item img {
+    display: none;
+  }
+}
+.header-banner .owl-carousel .owl-stage-outer {
+  height: 100%;
+}
+.header-banner .owl-carousel .owl-stage-outer .owl-stage {
+  height: 100%;
+}
 .header-banner .banner-item {
   position: relative;
   width: 100%;
+}
+.header-banner .banner-item img {
+  height: 100%;
+  object-fit: cover;
 }
 .header-banner .banner-item .text {
   position: absolute;
