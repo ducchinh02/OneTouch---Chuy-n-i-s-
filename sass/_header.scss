@@ -350,9 +350,33 @@
     &-banner {
         position: relative;
         overflow: hidden;
+        @media screen and (max-width: 576px) {
+            & {
+                height: 80vh;
+                .banner-item {
+                    background-image: url('../img/Banner.webp');
+                    background-position: 80% 100%;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    img {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .owl-carousel .owl-stage-outer {
+            height: 100%;
+            .owl-stage {
+                height: 100%;
+            }
+        }
         .banner-item {
             position: relative;
             width: 100%;
+            img {
+                height: 100%;
+                object-fit: cover;
+            }
             .text {
                 position: absolute;
                 color: $white;
